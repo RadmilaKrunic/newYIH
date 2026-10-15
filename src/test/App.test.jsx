@@ -13,13 +13,16 @@ const renderApp = (path = '/') =>
   );
 
 describe('App', () => {
-  it('switches between Italian and English', async () => {
+  it('switches between Italian and English through the URL', async () => {
     await i18n.changeLanguage('it');
     renderApp();
     expect(screen.getByRole('heading', { level: 1 })).toHaveTextContent('Ciao, sono Brunilda.');
-    fireEvent.click(screen.getByRole('button', { name: 'EN' }));
-    expect(screen.getByRole('heading', { level: 1 })).toHaveTextContent("Ciao, I'm Brunilda.");
+    expect(screen.getByRole('link', { name: 'EN' })).toHaveAttribute('href', '/en/');
+    fireEvent.click(screen.getByRole('link', { name: 'EN' }));
+    expect(await screen.findByText("I'm Brunilda.", { exact: false })).toBeInTheDocument();
     expect(document.documentElement.lang).toBe('en');
+    expect(document.title).toBe('Your Italian Holidays | Holiday apartments in central Rome');
+    expect(screen.getByRole('link', { name: 'IT' })).toHaveAttribute('href', '/');
   });
 
   it('lists every apartment and filters by zone', async () => {
@@ -48,9 +51,9 @@ describe('App', () => {
   });
 
   it('builds the WhatsApp request in the current language', async () => {
-    await i18n.changeLanguage('en');
     const open = vi.spyOn(window, 'open').mockImplementation(() => null);
-    renderApp();
+    renderApp('/en/');
+    await screen.findByText('Tell us about your', { exact: false });
     const form = document.getElementById('request');
     const [arrival, departure] = form.querySelectorAll('input[type="date"]');
     fireEvent.change(arrival, { target: { value: '2030-05-01' } });
@@ -63,9 +66,8 @@ describe('App', () => {
   });
 
   it('renders the FAQ page', async () => {
-    await i18n.changeLanguage('en');
-    renderApp('/faq');
-    expect(screen.getByRole('heading', { name: 'Frequently asked questions' })).toBeInTheDocument();
+    renderApp('/en/faq/');
+    expect(await screen.findByRole('heading', { name: 'Frequently asked questions' })).toBeInTheDocument();
     expect(screen.getByText('What are the check-in and check-out times?')).toBeInTheDocument();
   });
 });

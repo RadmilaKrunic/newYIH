@@ -1,23 +1,28 @@
 import { useTranslation } from 'react-i18next';
+import { Link, useLocation } from 'react-router-dom';
 import { LANGUAGES } from '../i18n/index.js';
+import { localePath, pageFromPath } from '../i18n/paths.js';
 
+// Real links (not buttons) so search engines can follow them to the other language.
 export default function LanguageSwitcher() {
   const { t, i18n } = useTranslation();
+  const { pathname, hash } = useLocation();
+  const page = pageFromPath(pathname);
   const current = i18n.resolvedLanguage;
   return (
     <div className="lang-switch" role="group" aria-label={t('nav.language')}>
       {LANGUAGES.map(({ code, label, name }) => (
-        <button
+        <Link
           key={code}
-          type="button"
+          to={`${localePath(code, page)}${hash}`}
           lang={code}
+          hrefLang={code}
           title={name}
-          aria-pressed={current === code}
+          aria-current={current === code ? 'true' : undefined}
           className={current === code ? 'active' : undefined}
-          onClick={() => i18n.changeLanguage(code)}
         >
           {label}
-        </button>
+        </Link>
       ))}
     </div>
   );
