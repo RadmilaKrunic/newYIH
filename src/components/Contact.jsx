@@ -1,15 +1,19 @@
-import { useRef, useState } from 'react';
+import { useEffect, useRef, useState } from 'react';
 import { useTranslation } from 'react-i18next';
 import { ZONES } from '../data/apartments.js';
 import { contact, tel, whatsappUrl } from '../data/contact.js';
 
 const GUEST_OPTIONS = [2, 1, ...Array.from({ length: 13 }, (_, i) => i + 3)];
-const today = () => new Date().toLocaleDateString('en-CA');
 
 export default function Contact() {
   const { t } = useTranslation();
   const departureRef = useRef(null);
   const [form, setForm] = useState({ arrival: '', departure: '', guests: '2', zone: '', name: '' });
+  const arrivalRef = useRef(null);
+  // Set after load, not during prerender, so the date is today's and not the build day's.
+  useEffect(() => {
+    arrivalRef.current.min = new Date().toLocaleDateString('en-CA');
+  }, []);
   const update = (field) => (e) => {
     if (field === 'departure' || field === 'arrival') departureRef.current?.setCustomValidity('');
     setForm((f) => ({ ...f, [field]: e.target.value }));
@@ -59,7 +63,7 @@ export default function Contact() {
       <form id="request" onSubmit={onSubmit}>
         <label>
           {t('contact.arrival')}
-          <input type="date" required min={today()} value={form.arrival} onChange={update('arrival')} />
+          <input ref={arrivalRef} type="date" required value={form.arrival} onChange={update('arrival')} />
         </label>
         <label>
           {t('contact.departure')}

@@ -1,7 +1,10 @@
 {
   "meta": {
-    "title": "Your Italian Holidays | La tua casa a Roma",
-    "description": "Appartamenti nel cuore di Roma, transfer ed esperienze con Your Italian Holidays. Contattaci per organizzare il tuo soggiorno."
+    "title": "Your Italian Holidays | Appartamenti per vacanze nel centro di Roma",
+    "description": "Appartamenti per le vacanze nel centro di Roma, a Trevi, Spagna, Via Veneto, Prati e Monti. Brunilda ti accoglie dal 2012 e organizza transfer, tour ed esperienze.",
+    "faqTitle": "Domande frequenti | Your Italian Holidays Roma",
+    "faqDescription": "Check-in, check-out, deposito bagagli, transfer e contatti: le risposte alle domande più frequenti sul soggiorno nei nostri appartamenti a Roma.",
+    "ogLocale": "it_IT"
   },
   "nav": {
     "home": "Your Italian Holidays home",
@@ -30,10 +33,22 @@
     "p2": "Che tu viaggi in coppia, in famiglia o con un gruppo di amici, il nostro punto di riferimento è al centro di Roma, a due passi da Fontana di Trevi.",
     "signature": "Ti aspettiamo a Roma",
     "numbers": [
-      { "title": "Dal 2012", "text": "Ospitalità e accoglienza a Roma" },
-      { "title": "Nel cuore", "text": "Trevi · Spagna · Prati · Via Veneto" },
-      { "title": "La tua casa", "text": "Soluzioni per coppie, famiglie e gruppi" },
-      { "title": "Con te", "text": "Un contatto diretto per il soggiorno" }
+      {
+        "title": "Dal 2012",
+        "text": "Ospitalità e accoglienza a Roma"
+      },
+      {
+        "title": "Nel cuore",
+        "text": "Trevi · Spagna · Prati · Via Veneto"
+      },
+      {
+        "title": "La tua casa",
+        "text": "Soluzioni per coppie, famiglie e gruppi"
+      },
+      {
+        "title": "Con te",
+        "text": "Un contatto diretto per il soggiorno"
+      }
     ]
   },
   "apartments": {

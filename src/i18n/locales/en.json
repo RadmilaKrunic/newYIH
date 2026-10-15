@@ -1,7 +1,10 @@
 {
   "meta": {
-    "title": "Your Italian Holidays | Your home in Rome",
-    "description": "Apartments in the heart of Rome, transfers and experiences with Your Italian Holidays. Contact us to plan your stay."
+    "title": "Your Italian Holidays | Holiday apartments in central Rome",
+    "description": "Holiday apartments in central Rome, near Trevi, the Spanish Steps, Via Veneto, Prati and Monti. Brunilda has welcomed guests since 2012 and arranges transfers, tours and experiences.",
+    "faqTitle": "FAQ | Your Italian Holidays Rome",
+    "faqDescription": "Check-in, check-out, luggage storage, transfers and contacts: answers to the most common questions about staying in our apartments in Rome.",
+    "ogLocale": "en_GB"
   },
   "nav": {
     "home": "Your Italian Holidays home",
@@ -30,10 +33,22 @@
     "p2": "Whether you're travelling as a couple, with family or with a group of friends, our base is in the centre of Rome, a short walk from the Trevi Fountain.",
     "signature": "We look forward to seeing you in Rome",
     "numbers": [
-      { "title": "Since 2012", "text": "Hospitality and welcome in Rome" },
-      { "title": "In the heart", "text": "Trevi · Spagna · Prati · Via Veneto" },
-      { "title": "Your home", "text": "Options for couples, families and groups" },
-      { "title": "With you", "text": "One direct contact for your stay" }
+      {
+        "title": "Since 2012",
+        "text": "Hospitality and welcome in Rome"
+      },
+      {
+        "title": "In the heart",
+        "text": "Trevi · Spagna · Prati · Via Veneto"
+      },
+      {
+        "title": "Your home",
+        "text": "Options for couples, families and groups"
+      },
+      {
+        "title": "With you",
+        "text": "One direct contact for your stay"
+      }
     ]
   },
   "apartments": {

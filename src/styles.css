@@ -8,10 +8,10 @@
 
 /* IT / EN language switch, styled like the filter buttons */
 .lang-switch{display:inline-flex;gap:4px}
-.lang-switch button{padding:6px 10px;border:1px solid #d8cab8;background:transparent;color:var(--ink);cursor:pointer;font-size:11px;letter-spacing:1px}
-.lang-switch button:hover{border-color:#a68c6c}
-.lang-switch button.active{background:#dfcdb6;color:#443a30;border-color:#c7af91}
-@media(max-width:850px){header nav .lang-switch{display:inline-flex}}
+.lang-switch a{padding:6px 10px;border:1px solid #d8cab8;background:transparent;color:var(--ink);cursor:pointer;font-size:11px;letter-spacing:1px}
+.lang-switch a:hover{border-color:#a68c6c}
+.lang-switch a.active{background:#dfcdb6;color:#443a30;border-color:#c7af91}
+@media(max-width:850px){header nav .lang-switch a{display:inline-block}}
 
 .card .body .btn{margin-top:18px}
 
