@@ -1,15 +1,19 @@
+import { StrictMode } from 'react';
 import { describe, expect, it, vi } from 'vitest';
-import { fireEvent, render, screen, within } from '@testing-library/react';
+import { fireEvent, render, screen, waitFor, within } from '@testing-library/react';
 import { MemoryRouter } from 'react-router-dom';
 import i18n from '../i18n/index.js';
 import App from '../App.jsx';
 import { apartments } from '../data/apartments.js';
 
+// StrictMode, as in src/main.jsx, so double-run effects behave as in development.
 const renderApp = (path = '/') =>
   render(
-    <MemoryRouter initialEntries={[path]}>
-      <App />
-    </MemoryRouter>,
+    <StrictMode>
+      <MemoryRouter initialEntries={[path]}>
+        <App />
+      </MemoryRouter>
+    </StrictMode>,
   );
 
 describe('App', () => {
@@ -39,6 +43,8 @@ describe('App', () => {
     renderApp();
     fireEvent.click(screen.getAllByRole('button', { name: 'Scopri la casa e tutte le foto ↗' })[0]);
     const dialog = document.querySelector('dialog');
+    await new Promise((r) => setTimeout(r, 20));
+    expect(document.querySelector('dialog')).toBe(dialog);
     expect(dialog.open).toBe(true);
     expect(within(dialog).getByRole('heading', { name: 'Noah Apartment' })).toBeInTheDocument();
     expect(within(dialog).getByText('Fino a 8 ospiti · 1° piano con ascensore')).toBeInTheDocument();
@@ -47,7 +53,16 @@ describe('App', () => {
     fireEvent.click(within(dialog).getByRole('button', { name: 'Mostra la mappa' }));
     expect(dialog.querySelector('iframe')).toHaveAttribute('src', expect.stringContaining('Via%20del%20Tritone%2053'));
     fireEvent.click(within(dialog).getByRole('button', { name: 'Chiudi ✕' }));
-    expect(document.querySelector('dialog')).toBeNull();
+    await waitFor(() => expect(document.querySelector('dialog')).toBeNull());
+  });
+
+  it('opens the details from the card photo too', async () => {
+    await i18n.changeLanguage('it');
+    renderApp();
+    fireEvent.click(screen.getByRole('button', { name: 'Apri le foto di Chloè' }));
+    await new Promise((r) => setTimeout(r, 20));
+    expect(document.querySelector('dialog[open]')).not.toBeNull();
+    expect(within(document.querySelector('dialog')).getByRole('heading', { name: 'Chloè Apartment' })).toBeInTheDocument();
   });
 
   it('builds the WhatsApp request in the current language', async () => {
