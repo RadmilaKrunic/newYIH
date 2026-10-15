@@ -1,30 +1,35 @@
 {
   "meta": {
     "title": "Your Italian Holidays | La tua casa a Roma",
-    "description": "Appartamenti per le vacanze nel cuore di Roma, transfer, tour ed esperienze su richiesta."
+    "description": "Appartamenti nel cuore di Roma, transfer ed esperienze con Your Italian Holidays. Contattaci per organizzare il tuo soggiorno."
   },
   "nav": {
+    "home": "Your Italian Holidays home",
     "apartments": "Appartamenti",
     "services": "Servizi & esperienze",
     "about": "Chi siamo",
     "faq": "Domande frequenti",
-    "language": "Lingua",
-    "menu": "Menu"
+    "language": "Lingua"
   },
   "hero": {
     "eyebrow": "Your Italian Holidays · Roma",
     "title": "Ciao, sono Brunilda.",
-    "subtitle": "La tua persona di fiducia a Roma.",
-    "text": "Accolgo ospiti a Roma dal 2012. Con Your Italian Holidays mi occupo di appartamenti per le vacanze e ti aiuto a organizzare il soggiorno: transfer, tour, esperienze e servizi su richiesta.",
-    "cta": "Scopri i miei appartamenti ↓"
+    "titleEm1": "La tua persona",
+    "titleEm2": "di fiducia a Roma.",
+    "p1": "Accolgo ospiti a Roma dal 2012. Con Your Italian Holidays mi occupo di appartamenti per le vacanze e ti aiuto a organizzare il soggiorno: transfer, tour, esperienze e servizi su richiesta.",
+    "p2": "Prima organizzavo matrimoni ed eventi. Oggi porto la stessa attenzione ai dettagli nell’accoglienza, per farti sentire a casa e accompagnarti alla scoperta di Roma.",
+    "cta": "Scopri i miei appartamenti ↓",
+    "photoAlt": "La fondatrice di Your Italian Holidays",
+    "badge": "La tua host a Roma"
   },
-  "about": {
-    "eyebrow": "Benvenuto a Roma",
-    "title": "La tua accoglienza a Roma.",
+  "intro": {
+    "eyebrow": "L'ospitalità ha un nome",
+    "title1": "Benvenuto a Roma.",
+    "title2": "La tua accoglienza a Roma.",
     "p1": "Accolgo ospiti a Roma dal 2012. Con Your Italian Holidays ti aiuto a scegliere l'appartamento adatto e a organizzare il soggiorno, dall'arrivo in aeroporto alle esperienze da vivere in città.",
     "p2": "Che tu viaggi in coppia, in famiglia o con un gruppo di amici, il nostro punto di riferimento è al centro di Roma, a due passi da Fontana di Trevi.",
-    "photoAlt": "La fondatrice di Your Italian Holidays",
-    "highlights": [
+    "signature": "Ti aspettiamo a Roma",
+    "numbers": [
       { "title": "Dal 2012", "text": "Ospitalità e accoglienza a Roma" },
       { "title": "Nel cuore", "text": "Trevi · Spagna · Prati · Via Veneto" },
       { "title": "La tua casa", "text": "Soluzioni per coppie, famiglie e gruppi" },
@@ -32,10 +37,10 @@
     ]
   },
   "apartments": {
-    "eyebrow": "Appartamenti",
-    "title": "Le nostre case a Roma",
-    "intro": "Ogni scheda riporta piano, disposizione degli ambienti e servizi confermati. Il numero di ospiti dipende dall'allestimento dei letti concordato.",
-    "filterLabel": "Filtra per zona",
+    "eyebrow": "Scegli dove sentirti a casa",
+    "title": "I nostri appartamenti",
+    "tagline": "Quartieri da vivere. Roma da scoprire a piedi.",
+    "filterLabel": "Filtra gli appartamenti",
     "all": "Tutti",
     "zones": {
       "trevi": "Trevi",
@@ -44,96 +49,159 @@
       "prati": "Prati",
       "monti": "Monti"
     },
-    "photos_one": "{{count}} foto",
-    "photos_other": "{{count}} foto",
-    "open": "Scopri la casa e tutte le foto",
+    "city": "Roma",
+    "notice": "Scopri le foto reali degli appartamenti aprendo le rispettive gallerie. Ogni scheda riporta piano, disposizione degli ambienti e servizi confermati. Il numero di ospiti dipende dall’allestimento dei letti concordato.",
+    "openPhotos": "Apri le foto di {{name}}",
+    "coverAlt": "Camera di {{name}}",
     "map": "Vedi sulla mappa ↗",
+    "open": "Scopri la casa e tutte le foto ↗",
+    "askDetails": "Richiedi dettagli e foto ↗",
+    "askDetailsMessage": "Ciao, vorrei informazioni e foto di {{name}}.",
     "photoAlt": "{{name}} — foto {{n}}",
     "close": "Chiudi ✕",
-    "prev": "Foto precedente",
-    "next": "Foto successiva",
-    "counter": "{{n}} di {{total}}",
-    "empty": "Nessun appartamento in questa zona."
+    "detailEyebrow": "La tua casa, nel dettaglio",
+    "spaces": "Spazi e comfort",
+    "accessNote": "Il palazzo dispone di ascensore. Per gli appartamenti di Via del Tritone, contattaci prima di prenotare per verificare lo stato del servizio: è stato segnalato un guasto.",
+    "where": "Dove si trova",
+    "showMap": "Mostra la mappa",
+    "openMaps": "Apri in Google Maps ↗",
+    "mapTitle": "Mappa di {{address}} a Roma",
+    "tailored": "Il soggiorno, su misura",
+    "tailoredText": "Prima dell’arrivo ti aiutiamo a scegliere la disposizione dei letti adatta al tuo gruppo. Su richiesta, possiamo prenotare tramite i nostri partner transfer privati, tour con guida, fotografo e babysitter, secondo disponibilità. Costi e condizioni vengono confermati prima della prenotazione.",
+    "proposal": "Richiedi una proposta personalizzata ↗",
+    "proposalMessage": "Ciao, vorrei una proposta per {{name}}. Date: / Ospiti: / Preferenze: "
+  },
+  "homes": {
+    "noah": {
+      "description": "Due camere, ciascuna con letto matrimoniale, e un salone con divano letto. Un letto singolo può essere predisposto su richiesta. Una soluzione per famiglie e piccoli gruppi che desiderano camere separate e un punto di partenza centrale per vivere Roma.",
+      "facts": "Fino a 8 ospiti · 1° piano con ascensore"
+    },
+    "chloe": {
+      "description": "Una camera con letto matrimoniale e un salone con divano letto, con possibilità di aggiungere un letto singolo su richiesta. Una casa per coppie o famiglie che desiderano soggiornare nel cuore di Roma, nella zona di Fontana di Trevi.",
+      "facts": "Fino a 5 ospiti · 1° piano con ascensore"
+    },
+    "luxury": {
+      "description": "Una camera con letto matrimoniale e un salone con divano letto. L’appartamento affaccia sul cortile interno: una soluzione per chi preferisce questo tipo di affaccio pur soggiornando in una posizione centrale, nella zona di Trevi.",
+      "facts": "4–5 ospiti · 1° piano con ascensore"
+    },
+    "linda": {
+      "description": "Una camera con letto matrimoniale e un salone con divano letto; un letto singolo può essere aggiunto su richiesta. Una soluzione flessibile per coppie e famiglie, con un contatto diretto per organizzare il soggiorno nella zona di Trevi.",
+      "facts": "Fino a 5 ospiti · 2° piano con ascensore"
+    },
+    "deluxe": {
+      "description": "Due camere da letto: una con letto matrimoniale e una con due letti singoli. Il salone dispone di due divani letto. L’appartamento ha un bagno. La distribuzione degli ambienti consente a famiglie e gruppi di condividere il soggiorno mantenendo due camere separate.",
+      "facts": "Fino a 8 ospiti · 4° piano con ascensore"
+    },
+    "babuino72": {
+      "description": "Tre camere da letto, ciascuna con letto matrimoniale, e un salone con divano letto. Una soluzione per famiglie e gruppi che desiderano più camere indipendenti lungo Via del Babuino, nella zona di Piazza di Spagna.",
+      "facts": "Fino a 8 ospiti · 2° piano con ascensore"
+    },
+    "babuino164": {
+      "description": "Una camera con letto matrimoniale, due saloni con un divano letto matrimoniale ciascuno e un bagno. Tre ambienti possono quindi essere destinati al riposo, con una sola camera da letto separata. Una soluzione nella zona di Piazza di Spagna.",
+      "facts": "Fino a 6 ospiti · 4° piano con ascensore"
+    },
+    "veneto": {
+      "description": "Cinque camere da letto, ciascuna con un letto matrimoniale, tre letti singoli aggiuntivi e un salone con divano letto. La casa dispone di cucina e tre bagni completi. Aria condizionata, affaccio su Via Lombardia e balconcino sulla via. Il palazzo offre portiere durante la giornata e apertura automatica. Una soluzione per famiglie numerose e gruppi che cercano più camere e bagni, a fianco di Via Veneto.",
+      "facts": "12–15 ospiti · 1° piano con ascensore"
+    },
+    "barberini": {
+      "description": "Una camera con letto matrimoniale, salone con divano letto e letto singolo, cucina e un bagno. Una casa per coppie e famiglie in Via Emilia, nella zona di Via Veneto e Barberini.",
+      "facts": "Fino a 5 ospiti · 4° piano con ascensore"
+    },
+    "vatican": {
+      "description": "Due camere da letto, ciascuna con letto matrimoniale, e un divano letto. Una soluzione per famiglie e piccoli gruppi che desiderano due camere separate nel quartiere Prati, per un soggiorno dedicato anche alla scoperta del Vaticano.",
+      "facts": "Fino a 6 ospiti · 4° piano con ascensore"
+    },
+    "gabriella": {
+      "description": "Una camera con letto matrimoniale e un soggiorno con divano letto. Una soluzione per coppie e famiglie che desiderano soggiornare in Via degli Ibernesi e vivere la zona di Monti.",
+      "facts": "Fino a 4 ospiti · 1° piano con ascensore"
+    },
+    "maya": {
+      "description": "Due camere da letto, un salone, cucina, un bagno e un terrazzino. Una casa in Via dei Quattro Cantoni 6, nella zona di Monti e del Colosseo, per chi desidera ambienti separati e uno spazio esterno durante il soggiorno. Contattaci per la disposizione dei letti più adatta al tuo gruppo.",
+      "facts": "Fino a 5 ospiti · 1° piano con ascensore"
+    }
   },
   "services": {
-    "eyebrow": "Servizi & esperienze",
-    "title": "Tutto il necessario per il tuo soggiorno",
+    "eyebrow": "Tourist Station Trevi · Vicolo del Gallinaccio 7",
+    "title1": "La tua vacanza a Roma,",
+    "title2": "come la desideri tu.",
+    "intro": "Oltre alle case vacanze, ti aiutiamo a vivere Roma e a organizzare ogni momento del viaggio. Nel nostro negozio siamo il tuo punto di riferimento: operiamo come intermediari per prenotare transfer, tour, esperienze e servizi con guide, autisti e operatori partner. Tu ci racconti cosa cerchi, noi ti aiutiamo a trovare la soluzione.",
     "photoAlt": "Tourist Station Trevi — deposito bagagli",
     "items": [
       {
-        "kicker": "Soggiornare",
+        "kicker": "SOGGIORNARE",
         "title": "Case vacanze & gestione",
         "text": "Appartamenti per coppie, famiglie e gruppi e gestione completa delle case vacanze per i proprietari. Assistenza agli ospiti, coordinamento del check-in, consegna e ritiro delle chiavi, pulizie urgenti e personale su richiesta."
       },
       {
-        "kicker": "Arrivare",
+        "kicker": "ARRIVARE",
         "title": "Transfer privati & NCC",
         "text": "Prenotiamo transfer da e per Fiumicino, Ciampino e il porto, con auto private, minivan e veicoli di lusso con autista. Servizio porta a porta, anche per eventi e occasioni speciali; richieste per qualsiasi orario, secondo disponibilità."
       },
       {
-        "kicker": "Viaggiare leggeri",
+        "kicker": "VIAGGIARE LEGGERI",
         "title": "Deposito bagagli & doccia",
         "text": "Deposito bagagli al Tourist Station Trevi, in Vicolo del Gallinaccio 7. Su richiesta, accesso a una doccia privata con asciugamani puliti e prodotti da bagno: una soluzione prima del check-in o dopo il check-out."
       },
       {
-        "kicker": "Scoprire Roma",
+        "kicker": "SCOPRIRE ROMA",
         "title": "Tour guidati privati",
-        "text": "Ti mettiamo in contatto con guide e operatori per visitare Colosseo, Vaticano e centro storico, scegliendo il percorso e l'esperienza più adatti ai tuoi interessi."
+        "text": "Ti mettiamo in contatto con guide e operatori per visitare Colosseo, Vaticano e centro storico, scegliendo il percorso e l’esperienza più adatti ai tuoi interessi."
       },
       {
-        "kicker": "Esplorare",
+        "kicker": "ESPLORARE",
         "title": "Gite fuori Roma & barca",
         "text": "Organizziamo tramite i nostri partner escursioni a Firenze, Napoli, Pompei e in Costiera Amalfitana, oltre a tour in barca a Roma, Amalfi e Capri. Itinerari e disponibilità da concordare."
       },
       {
-        "kicker": "Vivere esperienze",
+        "kicker": "VIVERE ESPERIENZE",
         "title": "Sapori, Vespa & natura",
-        "text": "Degustazioni di vino, corsi di cucina, tour in Vespa o Fiat 500, passeggiate a cavallo e cene romantiche in campagna. Raccontaci cosa desideri: cerchiamo l'esperienza giusta per te."
+        "text": "Degustazioni di vino, corsi di cucina, tour in Vespa o Fiat 500, passeggiate a cavallo e cene romantiche in campagna. Raccontaci cosa desideri: cerchiamo l’esperienza giusta per te."
       },
       {
-        "kicker": "Festeggiare",
+        "kicker": "FESTEGGIARE",
         "title": "Eventi & occasioni speciali",
-        "text": "Supporto nell'organizzazione di eventi privati a Roma, compleanni, feste a sorpresa, proposte romantiche, anniversari, matrimoni intimi e fughe romantiche. Esperienze personalizzate per i tuoi momenti speciali."
+        "text": "Supporto nell’organizzazione di eventi privati a Roma, compleanni, feste a sorpresa, proposte romantiche, anniversari, matrimoni intimi e fughe romantiche. Esperienze personalizzate per i tuoi momenti speciali."
       },
       {
-        "kicker": "Personalizzare",
+        "kicker": "PERSONALIZZARE",
         "title": "Servizi su misura",
         "text": "Fotografi, babysitter e assistenza per esigenze particolari durante il soggiorno. Per qualsiasi altra esperienza o servizio, parlane con noi: verifichiamo le possibilità con i nostri collaboratori."
       }
     ],
-    "note": "Servizi ed esperienze su richiesta, soggetti alla disponibilità dei partner. Ti confermiamo costi e condizioni prima della prenotazione."
+    "note": "Servizi ed esperienze su richiesta, soggetti alla disponibilità dei partner. Ti confermiamo costi e condizioni prima della prenotazione.",
+    "cta": "Raccontaci cosa desideri ↗",
+    "ctaMessage": "Ciao, vorrei organizzare un servizio o un'esperienza a Roma."
   },
   "contact": {
-    "eyebrow": "Contatti",
-    "title": "Raccontaci la tua vacanza ideale.",
+    "eyebrow": "Il tuo prossimo viaggio comincia qui",
+    "title1": "Raccontaci la tua",
+    "title2": "vacanza ideale.",
     "text": "Indicaci le date, il numero di ospiti e la zona che preferisci. Ti risponderemo con le opzioni per il tuo soggiorno.",
+    "emergency": "Emergenze durante il soggiorno",
+    "hours": "Lunedì–sabato · 09:00–16:00",
     "arrival": "Arrivo",
     "departure": "Partenza",
     "guests": "Ospiti",
     "zone": "Zona preferita",
     "anyZone": "Qualsiasi zona",
     "name": "Il tuo nome",
+    "namePlaceholder": "Come ti chiami?",
     "submit": "Richiedi disponibilità su WhatsApp ↗",
     "hint": "Si apre WhatsApp con la tua richiesta: potrai controllarla e inviarla. Disponibilità e prezzo saranno confermati dal nostro team.",
-    "departureError": "La partenza deve essere dopo l'arrivo.",
-    "message": "Ciao Brunilda! Vorrei richiedere la disponibilità per un soggiorno a Roma.",
-    "messageName": "Nome",
-    "messageNotSet": "da definire",
-    "email": "Email",
-    "phone": "Telefono",
-    "emergency": "Emergenze durante il soggiorno",
-    "office": "Ufficio",
-    "hours": "Lunedì–sabato · 09:00–16:00"
+    "departureError": "La partenza deve essere successiva all’arrivo.",
+    "message": "Ciao, sono {{name}}. Vorrei disponibilità dal {{arrival}} al {{departure}} per {{guests}} ospiti. Zona: {{zone}}."
   },
   "faq": {
+    "eyebrow": "Your Italian Holidays · Roma",
     "title": "Domande frequenti",
     "intro": "Le informazioni utili per organizzare il tuo soggiorno a Roma. Apri una domanda per leggere la risposta.",
-    "intro2": "Per richieste particolari, siamo a tua disposizione.",
-    "back": "← Torna alla home",
+    "help": "Per richieste particolari, siamo a tua disposizione.",
+    "write": "Scrivici su WhatsApp ↗",
     "items": [
       {
         "q": "A che ora sono previsti check-in e check-out?",
-        "a": "Il check-in è previsto dalle 15:00 e il check-out entro le 10:00. Comunicaci il tuo orario di arrivo per organizzare l'accoglienza e ricevere le istruzioni di accesso al tuo appartamento."
+        "a": "Il check-in è previsto dalle 15:00 e il check-out entro le 10:00. Comunicaci il tuo orario di arrivo per organizzare l’accoglienza e ricevere le istruzioni di accesso al tuo appartamento."
       },
       {
         "q": "Posso lasciare i bagagli prima del check-in o dopo il check-out?",
@@ -149,7 +217,7 @@
       },
       {
         "q": "Dove posso vedere la posizione degli appartamenti?",
-        "a": "Ogni scheda contiene il collegamento “Vedi sulla mappa”. Aprendo “Scopri la casa e tutte le foto” trovi anche l'indirizzo e il pulsante per visualizzare la mappa direttamente nei dettagli dell'appartamento."
+        "a": "Ogni scheda contiene il collegamento “Vedi sulla mappa”. Aprendo “Scopri la casa e tutte le foto” trovi anche l’indirizzo e il pulsante per visualizzare la mappa direttamente nei dettagli dell’appartamento."
       }
     ]
   },

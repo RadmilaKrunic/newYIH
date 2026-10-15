@@ -13,7 +13,7 @@ export default function LanguageSwitcher() {
           lang={code}
           title={name}
           aria-pressed={current === code}
-          className={current === code ? 'is-active' : undefined}
+          className={current === code ? 'active' : undefined}
           onClick={() => i18n.changeLanguage(code)}
         >
           {label}

@@ -4,18 +4,21 @@ import { contact, whatsappUrl } from '../data/contact.js';
 export default function Footer() {
   const { t } = useTranslation();
   return (
-    <footer className="site-footer">
-      <div className="container footer-inner">
+    <>
+      <footer>
         <div>
-          <p className="footer-brand">Your Italian Holidays</p>
-          <p>{t('footer.tagline')}</p>
+          <strong>Your Italian Holidays</strong>
+          <br />
+          {t('footer.tagline')}
         </div>
-        <div className="footer-links">
-          <a href={contact.currentSite} target="_blank" rel="noreferrer">{t('footer.currentSite')}</a>
-          <a href={whatsappUrl()} target="_blank" rel="noreferrer">{t('footer.whatsapp')}</a>
+        <div>
+          <a href={contact.currentSite} target="_blank" rel="noopener noreferrer">{t('footer.currentSite')}</a>
+          <br />© {new Date().getFullYear()} Your Italian Holidays
         </div>
-        <p className="copyright">© {new Date().getFullYear()} Your Italian Holidays</p>
-      </div>
-    </footer>
+      </footer>
+      <a className="btn float" href={whatsappUrl()} target="_blank" rel="noopener noreferrer">
+        {t('footer.whatsapp')}
+      </a>
+    </>
   );
 }

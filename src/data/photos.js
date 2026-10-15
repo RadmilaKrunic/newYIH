@@ -23,11 +23,14 @@ export function localPhotos(folder, files = localFiles) {
     .map((path) => files[path]);
 }
 
-/** Local photos if there are any, otherwise the seed photos from the example site. */
-export function photosFor({ folder, seedPhotos = [] }, files = localFiles, base = remoteBase) {
+/**
+ * The apartment's photos as { src, crop } objects: local files if there are any,
+ * otherwise the seed photos from the example site (with the example's crops).
+ */
+export function photosFor({ folder, seedPhotos = [], seedCrops = [] }, files = localFiles, base = remoteBase) {
   const local = localPhotos(folder, files);
-  if (local.length > 0) return local;
-  return seedPhotos.map((file) => `${base}${folder}/${file}`);
+  if (local.length > 0) return local.map((src) => ({ src }));
+  return seedPhotos.map((file, i) => ({ src: `${base}${folder}/${file}`, crop: seedCrops[i] }));
 }
 
 /** A single site image (logo, founder photo...) stored at src/photos/site/<file>. */

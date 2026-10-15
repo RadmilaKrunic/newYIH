@@ -1,30 +1,35 @@
 {
   "meta": {
     "title": "Your Italian Holidays | Your home in Rome",
-    "description": "Holiday apartments in the heart of Rome, with transfers, tours and experiences on request."
+    "description": "Apartments in the heart of Rome, transfers and experiences with Your Italian Holidays. Contact us to plan your stay."
   },
   "nav": {
+    "home": "Your Italian Holidays home",
     "apartments": "Apartments",
     "services": "Services & experiences",
     "about": "About us",
     "faq": "FAQ",
-    "language": "Language",
-    "menu": "Menu"
+    "language": "Language"
   },
   "hero": {
     "eyebrow": "Your Italian Holidays · Rome",
     "title": "Ciao, I'm Brunilda.",
-    "subtitle": "Your trusted person in Rome.",
-    "text": "I have been welcoming guests in Rome since 2012. With Your Italian Holidays I look after holiday apartments and help you plan your stay: transfers, tours, experiences and services on request.",
-    "cta": "Discover my apartments ↓"
+    "titleEm1": "Your trusted person",
+    "titleEm2": "in Rome.",
+    "p1": "I have been welcoming guests in Rome since 2012. With Your Italian Holidays I look after holiday apartments and help you plan your stay: transfers, tours, experiences and services on request.",
+    "p2": "I used to organise weddings and events. Today I bring the same attention to detail to welcoming guests, to make you feel at home and help you discover Rome.",
+    "cta": "Discover my apartments ↓",
+    "photoAlt": "The founder of Your Italian Holidays",
+    "badge": "Your host in Rome"
   },
-  "about": {
-    "eyebrow": "Welcome to Rome",
-    "title": "Your welcome in Rome.",
+  "intro": {
+    "eyebrow": "Hospitality has a name",
+    "title1": "Welcome to Rome.",
+    "title2": "Your welcome in Rome.",
     "p1": "I have been welcoming guests in Rome since 2012. With Your Italian Holidays I help you choose the right apartment and plan your stay, from your airport arrival to the experiences you'll enjoy in the city.",
     "p2": "Whether you're travelling as a couple, with family or with a group of friends, our base is in the centre of Rome, a short walk from the Trevi Fountain.",
-    "photoAlt": "The founder of Your Italian Holidays",
-    "highlights": [
+    "signature": "We look forward to seeing you in Rome",
+    "numbers": [
       { "title": "Since 2012", "text": "Hospitality and welcome in Rome" },
       { "title": "In the heart", "text": "Trevi · Spagna · Prati · Via Veneto" },
       { "title": "Your home", "text": "Options for couples, families and groups" },
@@ -32,10 +37,10 @@
     ]
   },
   "apartments": {
-    "eyebrow": "Apartments",
-    "title": "Our homes in Rome",
-    "intro": "Each listing shows the floor, room layout and confirmed amenities. The number of guests depends on the bed arrangement agreed with us.",
-    "filterLabel": "Filter by area",
+    "eyebrow": "Choose where to feel at home",
+    "title": "Our apartments",
+    "tagline": "Neighbourhoods to live in. Rome to discover on foot.",
+    "filterLabel": "Filter the apartments",
     "all": "All",
     "zones": {
       "trevi": "Trevi",
@@ -44,92 +49,155 @@
       "prati": "Prati",
       "monti": "Monti"
     },
-    "photos_one": "{{count}} photo",
-    "photos_other": "{{count}} photos",
-    "open": "See the home and all photos",
+    "city": "Rome",
+    "notice": "See real photos of each apartment by opening its gallery. Every listing shows the floor, room layout and confirmed amenities. The number of guests depends on the bed arrangement agreed with us.",
+    "openPhotos": "Open the photos of {{name}}",
+    "coverAlt": "Room at {{name}}",
     "map": "View on map ↗",
+    "open": "See the home and all photos ↗",
+    "askDetails": "Ask for details and photos ↗",
+    "askDetailsMessage": "Hi, I'd like information and photos of {{name}}.",
     "photoAlt": "{{name}} — photo {{n}}",
     "close": "Close ✕",
-    "prev": "Previous photo",
-    "next": "Next photo",
-    "counter": "{{n}} of {{total}}",
-    "empty": "No apartments in this area."
+    "detailEyebrow": "Your home, in detail",
+    "spaces": "Rooms and comfort",
+    "accessNote": "The building has a lift. For the Via del Tritone apartments, please contact us before booking to check the lift's status: a fault has been reported.",
+    "where": "Where it is",
+    "showMap": "Show the map",
+    "openMaps": "Open in Google Maps ↗",
+    "mapTitle": "Map of {{address}}, Rome",
+    "tailored": "Your stay, made to measure",
+    "tailoredText": "Before you arrive we help you choose the bed arrangement that suits your group. On request, through our partners we can book private transfers, guided tours, a photographer and babysitters, subject to availability. Prices and conditions are confirmed before you book.",
+    "proposal": "Ask for a personalised proposal ↗",
+    "proposalMessage": "Hi, I'd like a proposal for {{name}}. Dates: / Guests: / Preferences: "
+  },
+  "homes": {
+    "noah": {
+      "description": "Two bedrooms, each with a double bed, and a living room with a sofa bed. A single bed can be added on request. Ideal for families and small groups who want separate bedrooms and a central base for exploring Rome.",
+      "facts": "Up to 8 guests · 1st floor with lift"
+    },
+    "chloe": {
+      "description": "One bedroom with a double bed and a living room with a sofa bed, with a single bed available on request. A home for couples or families who want to stay in the heart of Rome, near the Trevi Fountain.",
+      "facts": "Up to 5 guests · 1st floor with lift"
+    },
+    "luxury": {
+      "description": "One bedroom with a double bed and a living room with a sofa bed. The apartment looks onto the inner courtyard: a good choice if you prefer that kind of view while staying in a central spot near Trevi.",
+      "facts": "4–5 guests · 1st floor with lift"
+    },
+    "linda": {
+      "description": "One bedroom with a double bed and a living room with a sofa bed; a single bed can be added on request. A flexible option for couples and families, with one direct contact to organise your stay in the Trevi area.",
+      "facts": "Up to 5 guests · 2nd floor with lift"
+    },
+    "deluxe": {
+      "description": "Two bedrooms: one with a double bed and one with two single beds. The living room has two sofa beds. The apartment has one bathroom. The layout lets families and groups share the stay while keeping two separate bedrooms.",
+      "facts": "Up to 8 guests · 4th floor with lift"
+    },
+    "babuino72": {
+      "description": "Three bedrooms, each with a double bed, and a living room with a sofa bed. Ideal for families and groups who want several separate bedrooms on Via del Babuino, near Piazza di Spagna.",
+      "facts": "Up to 8 guests · 2nd floor with lift"
+    },
+    "babuino164": {
+      "description": "One bedroom with a double bed, two living rooms each with a double sofa bed, and one bathroom. Three rooms can be used for sleeping, with one separate bedroom. Located near Piazza di Spagna.",
+      "facts": "Up to 6 guests · 4th floor with lift"
+    },
+    "veneto": {
+      "description": "Five bedrooms, each with a double bed, three extra single beds and a living room with a sofa bed. The home has a kitchen and three full bathrooms. Air conditioning, windows onto Via Lombardia and a small balcony over the street. The building has a daytime concierge and automatic entry. Ideal for large families and groups who need several bedrooms and bathrooms, right next to Via Veneto.",
+      "facts": "12–15 guests · 1st floor with lift"
+    },
+    "barberini": {
+      "description": "One bedroom with a double bed, a living room with a sofa bed and a single bed, a kitchen and one bathroom. A home for couples and families on Via Emilia, in the Via Veneto and Barberini area.",
+      "facts": "Up to 5 guests · 4th floor with lift"
+    },
+    "vatican": {
+      "description": "Two bedrooms, each with a double bed, and a sofa bed. Ideal for families and small groups who want two separate bedrooms in the Prati neighbourhood, with the Vatican close by.",
+      "facts": "Up to 6 guests · 4th floor with lift"
+    },
+    "gabriella": {
+      "description": "One bedroom with a double bed and a living room with a sofa bed. Ideal for couples and families who want to stay on Via degli Ibernesi and enjoy the Monti neighbourhood.",
+      "facts": "Up to 4 guests · 1st floor with lift"
+    },
+    "maya": {
+      "description": "Two bedrooms, a living room, a kitchen, one bathroom and a small terrace. A home at Via dei Quattro Cantoni 6, in the Monti and Colosseum area, for guests who want separate rooms and some outdoor space. Contact us for the bed arrangement that best suits your group.",
+      "facts": "Up to 5 guests · 1st floor with lift"
+    }
   },
   "services": {
-    "eyebrow": "Services & experiences",
-    "title": "Everything you need for your stay",
+    "eyebrow": "Tourist Station Trevi · Vicolo del Gallinaccio 7",
+    "title1": "Your holiday in Rome,",
+    "title2": "just the way you want it.",
+    "intro": "Beyond holiday homes, we help you enjoy Rome and plan every moment of your trip. Our shop is your point of reference: we act as intermediaries to book transfers, tours, experiences and services with partner guides, drivers and operators. You tell us what you're looking for, and we help you find the right solution.",
     "photoAlt": "Tourist Station Trevi — luggage storage",
     "items": [
       {
-        "kicker": "Stay",
+        "kicker": "STAY",
         "title": "Holiday homes & management",
         "text": "Apartments for couples, families and groups, and full holiday-rental management for owners. Guest assistance, check-in coordination, key handover and collection, urgent cleaning and staff on request."
       },
       {
-        "kicker": "Arrive",
+        "kicker": "ARRIVE",
         "title": "Private transfers & chauffeur service",
         "text": "We book transfers to and from Fiumicino, Ciampino and the cruise port, with private cars, minivans and luxury vehicles with driver. Door-to-door service, also for events and special occasions; requests at any hour, subject to availability."
       },
       {
-        "kicker": "Travel light",
+        "kicker": "TRAVEL LIGHT",
         "title": "Luggage storage & shower",
         "text": "Luggage storage at Tourist Station Trevi, Vicolo del Gallinaccio 7. On request, access to a private shower with clean towels and toiletries: a handy option before check-in or after check-out."
       },
       {
-        "kicker": "Discover Rome",
+        "kicker": "DISCOVER ROME",
         "title": "Private guided tours",
         "text": "We put you in touch with guides and operators to visit the Colosseum, the Vatican and the historic centre, choosing the route and experience that best suit your interests."
       },
       {
-        "kicker": "Explore",
+        "kicker": "EXPLORE",
         "title": "Day trips & boat tours",
         "text": "Through our partners we arrange excursions to Florence, Naples, Pompeii and the Amalfi Coast, plus boat tours in Rome, Amalfi and Capri. Itineraries and availability to be agreed."
       },
       {
-        "kicker": "Live it",
+        "kicker": "LIVE IT",
         "title": "Food, Vespa & nature",
         "text": "Wine tastings, cooking classes, Vespa or Fiat 500 tours, horseback rides and romantic dinners in the countryside. Tell us what you'd like: we'll find the right experience for you."
       },
       {
-        "kicker": "Celebrate",
+        "kicker": "CELEBRATE",
         "title": "Events & special occasions",
         "text": "Help organising private events in Rome: birthdays, surprise parties, proposals, anniversaries, intimate weddings and romantic getaways. Tailor-made experiences for your special moments."
       },
       {
-        "kicker": "Personalise",
+        "kicker": "PERSONALISE",
         "title": "Tailor-made services",
         "text": "Photographers, babysitters and assistance for special needs during your stay. For any other experience or service, just ask: we'll check the options with our partners."
       }
     ],
-    "note": "Services and experiences on request, subject to partner availability. We confirm prices and conditions before you book."
+    "note": "Services and experiences on request, subject to partner availability. We confirm prices and conditions before you book.",
+    "cta": "Tell us what you'd like ↗",
+    "ctaMessage": "Hi, I'd like to arrange a service or an experience in Rome."
   },
   "contact": {
-    "eyebrow": "Contact",
-    "title": "Tell us about your ideal holiday.",
+    "eyebrow": "Your next trip starts here",
+    "title1": "Tell us about your",
+    "title2": "ideal holiday.",
     "text": "Let us know your dates, the number of guests and your preferred area. We'll reply with options for your stay.",
+    "emergency": "Emergencies during your stay",
+    "hours": "Monday–Saturday · 09:00–16:00",
     "arrival": "Arrival",
     "departure": "Departure",
     "guests": "Guests",
     "zone": "Preferred area",
     "anyZone": "Any area",
     "name": "Your name",
+    "namePlaceholder": "What's your name?",
     "submit": "Check availability on WhatsApp ↗",
     "hint": "WhatsApp opens with your request so you can review it and send it. Availability and price will be confirmed by our team.",
     "departureError": "Departure must be after arrival.",
-    "message": "Hi Brunilda! I'd like to check availability for a stay in Rome.",
-    "messageName": "Name",
-    "messageNotSet": "to be decided",
-    "email": "Email",
-    "phone": "Phone",
-    "emergency": "Emergencies during your stay",
-    "office": "Office",
-    "hours": "Monday–Saturday · 09:00–16:00"
+    "message": "Hi, I'm {{name}}. I'd like availability from {{arrival}} to {{departure}} for {{guests}} guests. Area: {{zone}}."
   },
   "faq": {
+    "eyebrow": "Your Italian Holidays · Rome",
     "title": "Frequently asked questions",
     "intro": "Useful information for planning your stay in Rome. Open a question to read the answer.",
-    "intro2": "For special requests, we're here to help.",
-    "back": "← Back to home",
+    "help": "For special requests, we're here to help.",
+    "write": "Message us on WhatsApp ↗",
     "items": [
       {
         "q": "What are the check-in and check-out times?",
@@ -149,7 +217,7 @@
       },
       {
         "q": "Where can I see where the apartments are?",
-        "a": "Every listing has a “View on map” link. When you open “See the home and all photos” you'll also find the address and a button to open the map right in the apartment details."
+        "a": "Every listing has a “View on map” link. When you open “See the home and all photos” you'll also find the address and a button to show the map right in the apartment details."
       }
     ]
   },
