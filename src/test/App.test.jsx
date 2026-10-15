@@ -1,4 +1,4 @@
-import { describe, expect, it } from 'vitest';
+import { describe, expect, it, vi } from 'vitest';
 import { fireEvent, render, screen, within } from '@testing-library/react';
 import { MemoryRouter } from 'react-router-dom';
 import i18n from '../i18n/index.js';
@@ -25,22 +25,41 @@ describe('App', () => {
   it('lists every apartment and filters by zone', async () => {
     await i18n.changeLanguage('it');
     renderApp();
-    const section = document.getElementById('appartamenti');
-    expect(within(section).getAllByRole('heading', { level: 3 })).toHaveLength(apartments.length);
-    fireEvent.click(within(section).getByRole('button', { name: 'Prati' }));
-    expect(within(section).getAllByRole('heading', { level: 3 }).map((h) => h.textContent)).toEqual(['Vatican Apartment']);
+    const grid = document.getElementById('properties');
+    expect(within(grid).getAllByRole('heading', { level: 3 })).toHaveLength(apartments.length);
+    fireEvent.click(screen.getByRole('button', { name: 'Monti' }));
+    expect(within(grid).getAllByRole('heading', { level: 3 }).map((h) => h.textContent)).toEqual(['Domus Gabriella', 'Domus Maya']);
   });
 
-  it('opens the photo gallery and closes it with Escape', async () => {
+  it('opens the apartment details with all photos and the map, and closes', async () => {
     await i18n.changeLanguage('it');
     renderApp();
-    fireEvent.click(screen.getAllByRole('button', { name: 'Scopri la casa e tutte le foto' })[0]);
-    const dialog = screen.getByRole('dialog');
-    expect(within(dialog).getByText('1 di 8')).toBeInTheDocument();
-    fireEvent.click(within(dialog).getByRole('button', { name: 'Foto successiva' }));
-    expect(within(dialog).getByText('2 di 8')).toBeInTheDocument();
-    fireEvent.keyDown(window, { key: 'Escape' });
-    expect(screen.queryByRole('dialog')).not.toBeInTheDocument();
+    fireEvent.click(screen.getAllByRole('button', { name: 'Scopri la casa e tutte le foto ↗' })[0]);
+    const dialog = document.querySelector('dialog');
+    expect(dialog.open).toBe(true);
+    expect(within(dialog).getByRole('heading', { name: 'Noah Apartment' })).toBeInTheDocument();
+    expect(within(dialog).getByText('Fino a 8 ospiti · 1° piano con ascensore')).toBeInTheDocument();
+    expect(within(dialog).getByText(/è stato segnalato un guasto/)).toBeInTheDocument();
+    expect(within(dialog).getAllByRole('img', { name: /Noah Apartment — foto/ })).toHaveLength(4);
+    fireEvent.click(within(dialog).getByRole('button', { name: 'Mostra la mappa' }));
+    expect(dialog.querySelector('iframe')).toHaveAttribute('src', expect.stringContaining('Via%20del%20Tritone%2053'));
+    fireEvent.click(within(dialog).getByRole('button', { name: 'Chiudi ✕' }));
+    expect(document.querySelector('dialog')).toBeNull();
+  });
+
+  it('builds the WhatsApp request in the current language', async () => {
+    await i18n.changeLanguage('en');
+    const open = vi.spyOn(window, 'open').mockImplementation(() => null);
+    renderApp();
+    const form = document.getElementById('request');
+    const [arrival, departure] = form.querySelectorAll('input[type="date"]');
+    fireEvent.change(arrival, { target: { value: '2030-05-01' } });
+    fireEvent.change(departure, { target: { value: '2030-05-04' } });
+    fireEvent.change(within(form).getByLabelText('Your name'), { target: { value: 'Ana' } });
+    fireEvent.submit(form);
+    const url = decodeURIComponent(open.mock.calls[0][0]);
+    expect(url).toContain("Hi, I'm Ana. I'd like availability from 2030-05-01 to 2030-05-04 for 2 guests. Area: Any area.");
+    open.mockRestore();
   });
 
   it('renders the FAQ page', async () => {

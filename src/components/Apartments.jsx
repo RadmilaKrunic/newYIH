@@ -1,72 +1,70 @@
-import { useMemo, useState } from 'react';
+import { useState } from 'react';
 import { useTranslation } from 'react-i18next';
 import { apartments, mapUrl, ZONES } from '../data/apartments.js';
 import { photosFor } from '../data/photos.js';
+import { whatsappUrl } from '../data/contact.js';
 import Gallery from './Gallery.jsx';
 
-const withPhotos = apartments.map((a) => ({ ...a, photos: photosFor(a) }));
+const homes = apartments.map((a) => ({ ...a, photos: photosFor(a) }));
 
 export default function Apartments() {
   const { t } = useTranslation();
   const [zone, setZone] = useState('all');
   const [openId, setOpenId] = useState(null);
 
-  const visible = useMemo(
-    () => (zone === 'all' ? withPhotos : withPhotos.filter((a) => a.zone === zone)),
-    [zone],
-  );
-  const opened = withPhotos.find((a) => a.id === openId);
+  const visible = zone === 'all' ? homes : homes.filter((h) => h.zone === zone);
+  const opened = homes.find((h) => h.id === openId);
 
   return (
-    <section id="appartamenti" className="section apartments">
-      <div className="container">
-        <p className="eyebrow">{t('apartments.eyebrow')}</p>
-        <h2 className="section-title">{t('apartments.title')}</h2>
-        <p className="lead">{t('apartments.intro')}</p>
-
-        <div className="filters" role="group" aria-label={t('apartments.filterLabel')}>
-          {['all', ...ZONES].map((z) => (
-            <button
-              key={z}
-              type="button"
-              aria-pressed={zone === z}
-              className={`chip${zone === z ? ' is-active' : ''}`}
-              onClick={() => setZone(z)}
-            >
-              {z === 'all' ? t('apartments.all') : t(`apartments.zones.${z}`)}
-            </button>
-          ))}
+    <section id="appartamenti" style={{ paddingTop: 25 }}>
+      <div className="section-top">
+        <div>
+          <div className="eyebrow">{t('apartments.eyebrow')}</div>
+          <h2>{t('apartments.title')}</h2>
         </div>
-
-        {visible.length === 0 ? (
-          <p className="empty">{t('apartments.empty')}</p>
-        ) : (
-          <ul className="apartment-grid">
-            {visible.map((a) => (
-              <li key={a.id} className="apartment-card">
-                <button type="button" className="card-media" onClick={() => setOpenId(a.id)}>
-                  {a.photos[0] && (
-                    <img src={a.photos[0]} alt={t('apartments.photoAlt', { name: a.name, n: 1 })} loading="lazy" />
-                  )}
-                  <span className="photo-count">{t('apartments.photos', { count: a.photos.length })}</span>
-                </button>
-                <div className="card-body">
-                  <p className="card-zone">{t(`apartments.zones.${a.zone}`)}</p>
-                  <h3>{a.name}</h3>
-                  <p className="card-address">{a.address}</p>
-                  <div className="card-actions">
-                    <button type="button" className="link-button" onClick={() => setOpenId(a.id)}>
-                      {t('apartments.open')}
-                    </button>
-                    <a href={mapUrl(a.address)} target="_blank" rel="noreferrer">{t('apartments.map')}</a>
-                  </div>
-                </div>
-              </li>
-            ))}
-          </ul>
-        )}
+        <p>{t('apartments.tagline')}</p>
       </div>
-      {opened && <Gallery apartment={opened} onClose={() => setOpenId(null)} />}
+      <div className="filters" aria-label={t('apartments.filterLabel')}>
+        {['all', ...ZONES].map((z) => (
+          <button key={z} type="button" className={zone === z ? 'active' : undefined} aria-pressed={zone === z} onClick={() => setZone(z)}>
+            {z === 'all' ? t('apartments.all') : t(`apartments.zones.${z}`)}
+          </button>
+        ))}
+      </div>
+      <div className="grid" id="properties">
+        {visible.map((h) => (
+          <article key={h.id} className="card">
+            {h.photos[0] && (
+              <button type="button" className="photo-button" onClick={() => setOpenId(h.id)} aria-label={t('apartments.openPhotos', { name: h.name })}>
+                <img loading="lazy" src={h.photos[0].src} alt={t('apartments.coverAlt', { name: h.name })} />
+              </button>
+            )}
+            <div className="body">
+              <div className="place">
+                {t(`apartments.zones.${h.zone}`)} · {t('apartments.city')}
+              </div>
+              <h3>{h.name}</h3>
+              <p>
+                {h.address}
+                <br />
+                {t(`homes.${h.id}.description`)}
+              </p>
+              <div className="detail">{t(`homes.${h.id}.facts`)}</div>
+              <a className="map-card-link" href={mapUrl(h.address)} target="_blank" rel="noopener noreferrer">
+                {t('apartments.map')}
+              </a>
+              <button type="button" className="btn" onClick={() => setOpenId(h.id)}>
+                {t('apartments.open')}
+              </button>
+              <a href={whatsappUrl(t('apartments.askDetailsMessage', { name: h.name }))} target="_blank" rel="noopener noreferrer">
+                {t('apartments.askDetails')}
+              </a>
+            </div>
+          </article>
+        ))}
+      </div>
+      <p className="notice">{t('apartments.notice')}</p>
+      {opened && <Gallery home={opened} onClose={() => setOpenId(null)} />}
     </section>
   );
 }
