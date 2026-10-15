@@ -1,0 +1,161 @@
+{
+  "meta": {
+    "title": "Your Italian Holidays | La tua casa a Roma",
+    "description": "Appartamenti per le vacanze nel cuore di Roma, transfer, tour ed esperienze su richiesta."
+  },
+  "nav": {
+    "apartments": "Appartamenti",
+    "services": "Servizi & esperienze",
+    "about": "Chi siamo",
+    "faq": "Domande frequenti",
+    "language": "Lingua",
+    "menu": "Menu"
+  },
+  "hero": {
+    "eyebrow": "Your Italian Holidays · Roma",
+    "title": "Ciao, sono Brunilda.",
+    "subtitle": "La tua persona di fiducia a Roma.",
+    "text": "Accolgo ospiti a Roma dal 2012. Con Your Italian Holidays mi occupo di appartamenti per le vacanze e ti aiuto a organizzare il soggiorno: transfer, tour, esperienze e servizi su richiesta.",
+    "cta": "Scopri i miei appartamenti ↓"
+  },
+  "about": {
+    "eyebrow": "Benvenuto a Roma",
+    "title": "La tua accoglienza a Roma.",
+    "p1": "Accolgo ospiti a Roma dal 2012. Con Your Italian Holidays ti aiuto a scegliere l'appartamento adatto e a organizzare il soggiorno, dall'arrivo in aeroporto alle esperienze da vivere in città.",
+    "p2": "Che tu viaggi in coppia, in famiglia o con un gruppo di amici, il nostro punto di riferimento è al centro di Roma, a due passi da Fontana di Trevi.",
+    "photoAlt": "La fondatrice di Your Italian Holidays",
+    "highlights": [
+      { "title": "Dal 2012", "text": "Ospitalità e accoglienza a Roma" },
+      { "title": "Nel cuore", "text": "Trevi · Spagna · Prati · Via Veneto" },
+      { "title": "La tua casa", "text": "Soluzioni per coppie, famiglie e gruppi" },
+      { "title": "Con te", "text": "Un contatto diretto per il soggiorno" }
+    ]
+  },
+  "apartments": {
+    "eyebrow": "Appartamenti",
+    "title": "Le nostre case a Roma",
+    "intro": "Ogni scheda riporta piano, disposizione degli ambienti e servizi confermati. Il numero di ospiti dipende dall'allestimento dei letti concordato.",
+    "filterLabel": "Filtra per zona",
+    "all": "Tutti",
+    "zones": {
+      "trevi": "Trevi",
+      "spagna": "Spagna",
+      "veneto": "Via Veneto",
+      "prati": "Prati",
+      "monti": "Monti"
+    },
+    "photos_one": "{{count}} foto",
+    "photos_other": "{{count}} foto",
+    "open": "Scopri la casa e tutte le foto",
+    "map": "Vedi sulla mappa ↗",
+    "photoAlt": "{{name}} — foto {{n}}",
+    "close": "Chiudi ✕",
+    "prev": "Foto precedente",
+    "next": "Foto successiva",
+    "counter": "{{n}} di {{total}}",
+    "empty": "Nessun appartamento in questa zona."
+  },
+  "services": {
+    "eyebrow": "Servizi & esperienze",
+    "title": "Tutto il necessario per il tuo soggiorno",
+    "photoAlt": "Tourist Station Trevi — deposito bagagli",
+    "items": [
+      {
+        "kicker": "Soggiornare",
+        "title": "Case vacanze & gestione",
+        "text": "Appartamenti per coppie, famiglie e gruppi e gestione completa delle case vacanze per i proprietari. Assistenza agli ospiti, coordinamento del check-in, consegna e ritiro delle chiavi, pulizie urgenti e personale su richiesta."
+      },
+      {
+        "kicker": "Arrivare",
+        "title": "Transfer privati & NCC",
+        "text": "Prenotiamo transfer da e per Fiumicino, Ciampino e il porto, con auto private, minivan e veicoli di lusso con autista. Servizio porta a porta, anche per eventi e occasioni speciali; richieste per qualsiasi orario, secondo disponibilità."
+      },
+      {
+        "kicker": "Viaggiare leggeri",
+        "title": "Deposito bagagli & doccia",
+        "text": "Deposito bagagli al Tourist Station Trevi, in Vicolo del Gallinaccio 7. Su richiesta, accesso a una doccia privata con asciugamani puliti e prodotti da bagno: una soluzione prima del check-in o dopo il check-out."
+      },
+      {
+        "kicker": "Scoprire Roma",
+        "title": "Tour guidati privati",
+        "text": "Ti mettiamo in contatto con guide e operatori per visitare Colosseo, Vaticano e centro storico, scegliendo il percorso e l'esperienza più adatti ai tuoi interessi."
+      },
+      {
+        "kicker": "Esplorare",
+        "title": "Gite fuori Roma & barca",
+        "text": "Organizziamo tramite i nostri partner escursioni a Firenze, Napoli, Pompei e in Costiera Amalfitana, oltre a tour in barca a Roma, Amalfi e Capri. Itinerari e disponibilità da concordare."
+      },
+      {
+        "kicker": "Vivere esperienze",
+        "title": "Sapori, Vespa & natura",
+        "text": "Degustazioni di vino, corsi di cucina, tour in Vespa o Fiat 500, passeggiate a cavallo e cene romantiche in campagna. Raccontaci cosa desideri: cerchiamo l'esperienza giusta per te."
+      },
+      {
+        "kicker": "Festeggiare",
+        "title": "Eventi & occasioni speciali",
+        "text": "Supporto nell'organizzazione di eventi privati a Roma, compleanni, feste a sorpresa, proposte romantiche, anniversari, matrimoni intimi e fughe romantiche. Esperienze personalizzate per i tuoi momenti speciali."
+      },
+      {
+        "kicker": "Personalizzare",
+        "title": "Servizi su misura",
+        "text": "Fotografi, babysitter e assistenza per esigenze particolari durante il soggiorno. Per qualsiasi altra esperienza o servizio, parlane con noi: verifichiamo le possibilità con i nostri collaboratori."
+      }
+    ],
+    "note": "Servizi ed esperienze su richiesta, soggetti alla disponibilità dei partner. Ti confermiamo costi e condizioni prima della prenotazione."
+  },
+  "contact": {
+    "eyebrow": "Contatti",
+    "title": "Raccontaci la tua vacanza ideale.",
+    "text": "Indicaci le date, il numero di ospiti e la zona che preferisci. Ti risponderemo con le opzioni per il tuo soggiorno.",
+    "arrival": "Arrivo",
+    "departure": "Partenza",
+    "guests": "Ospiti",
+    "zone": "Zona preferita",
+    "anyZone": "Qualsiasi zona",
+    "name": "Il tuo nome",
+    "submit": "Richiedi disponibilità su WhatsApp ↗",
+    "hint": "Si apre WhatsApp con la tua richiesta: potrai controllarla e inviarla. Disponibilità e prezzo saranno confermati dal nostro team.",
+    "departureError": "La partenza deve essere dopo l'arrivo.",
+    "message": "Ciao Brunilda! Vorrei richiedere la disponibilità per un soggiorno a Roma.",
+    "messageName": "Nome",
+    "messageNotSet": "da definire",
+    "email": "Email",
+    "phone": "Telefono",
+    "emergency": "Emergenze durante il soggiorno",
+    "office": "Ufficio",
+    "hours": "Lunedì–sabato · 09:00–16:00"
+  },
+  "faq": {
+    "title": "Domande frequenti",
+    "intro": "Le informazioni utili per organizzare il tuo soggiorno a Roma. Apri una domanda per leggere la risposta.",
+    "intro2": "Per richieste particolari, siamo a tua disposizione.",
+    "back": "← Torna alla home",
+    "items": [
+      {
+        "q": "A che ora sono previsti check-in e check-out?",
+        "a": "Il check-in è previsto dalle 15:00 e il check-out entro le 10:00. Comunicaci il tuo orario di arrivo per organizzare l'accoglienza e ricevere le istruzioni di accesso al tuo appartamento."
+      },
+      {
+        "q": "Posso lasciare i bagagli prima del check-in o dopo il check-out?",
+        "a": "Puoi rivolgerti al nostro Tourist Station Trevi, in Vicolo del Gallinaccio 7, aperto dal lunedì al sabato dalle 09:00 alle 16:00. Contattaci per verificare disponibilità e costo del deposito bagagli."
+      },
+      {
+        "q": "Potete organizzare un transfer o esperienze a Roma?",
+        "a": "Sì, tramite i nostri partner possiamo prenotare transfer privati, tour ed esperienze. Raccontaci le tue esigenze: ti confermiamo disponibilità, costi e condizioni prima della prenotazione."
+      },
+      {
+        "q": "Come posso contattarvi durante il soggiorno?",
+        "a": "Per informazioni e assistenza puoi chiamarci o scriverci al +39 347 809 1603. Per le emergenze relative al soggiorno il nostro recapito è +39 351 391 5959."
+      },
+      {
+        "q": "Dove posso vedere la posizione degli appartamenti?",
+        "a": "Ogni scheda contiene il collegamento “Vedi sulla mappa”. Aprendo “Scopri la casa e tutte le foto” trovi anche l'indirizzo e il pulsante per visualizzare la mappa direttamente nei dettagli dell'appartamento."
+      }
+    ]
+  },
+  "footer": {
+    "tagline": "Appartamenti & esperienze nel cuore di Roma",
+    "currentSite": "Visita il sito attuale ↗",
+    "whatsapp": "Scrivici · WhatsApp ↗"
+  }
+}
