@@ -5,6 +5,7 @@ import { MemoryRouter } from 'react-router-dom';
 import i18n from '../i18n/index.js';
 import App from '../App.jsx';
 import { apartments } from '../data/apartments.js';
+import { photosFor } from '../data/photos.js';
 
 // StrictMode, as in src/main.jsx, so double-run effects behave as in development.
 const renderApp = (path = '/') =>
@@ -49,7 +50,7 @@ describe('App', () => {
     expect(within(dialog).getByRole('heading', { name: 'Noah Apartment' })).toBeInTheDocument();
     expect(within(dialog).getByText('Fino a 8 ospiti · 1° piano con ascensore')).toBeInTheDocument();
     expect(within(dialog).getByText(/è stato segnalato un guasto/)).toBeInTheDocument();
-    expect(within(dialog).getAllByRole('img', { name: /Noah Apartment — foto/ })).toHaveLength(4);
+    expect(within(dialog).getAllByRole('img', { name: /Noah Apartment — foto/ })).toHaveLength(photosFor(apartments[0]).length);
     fireEvent.click(within(dialog).getByRole('button', { name: 'Mostra la mappa' }));
     expect(dialog.querySelector('iframe')).toHaveAttribute('src', expect.stringContaining('Via%20del%20Tritone%2053'));
     fireEvent.click(within(dialog).getByRole('button', { name: 'Chiudi ✕' }));

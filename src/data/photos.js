@@ -37,3 +37,8 @@ export function photosFor({ folder, seedPhotos = [], seedCrops = [] }, files = l
 export function siteImage(file, files = localFiles, base = remoteBase) {
   return files[`../photos/site/${file}`] ?? `${base}${file}`;
 }
+
+/** A site image only if it exists in src/photos/site/, otherwise undefined (no remote fallback). */
+export function localSiteImage(file, files = localFiles) {
+  return files[`../photos/site/${file}`];
+}

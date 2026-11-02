@@ -1,5 +1,5 @@
 import { describe, expect, it } from 'vitest';
-import { localPhotos, photosFor, siteImage } from '../data/photos.js';
+import { localPhotos, localSiteImage, photosFor, siteImage } from '../data/photos.js';
 
 const base = 'https://example.test/assets/';
 
@@ -37,5 +37,12 @@ describe('photo folders', () => {
     const { apartments } = await import('../data/apartments.js');
     const missing = apartments.filter((a) => !existsSync(`src/photos/${a.folder}/README.md`));
     expect(missing.map((a) => a.folder)).toEqual([]);
+  });
+});
+
+describe('localSiteImage', () => {
+  it('returns only local site images, with no remote fallback', () => {
+    expect(localSiteImage('servizio-tour.jpg', {})).toBeUndefined();
+    expect(localSiteImage('servizio-tour.jpg', { '../photos/site/servizio-tour.jpg': '/tour' })).toBe('/tour');
   });
 });
