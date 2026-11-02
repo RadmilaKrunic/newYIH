@@ -208,10 +208,10 @@
     "message": "Hi, I'm {{name}}. I'd like availability from {{arrival}} to {{departure}} for {{guests}} guests. Area: {{zone}}."
   },
   "faq": {
-    "eyebrow": "Your Italian Holidays · Rome",
+    "eyebrow": "Before you leave · During your stay",
     "title": "Frequently asked questions",
     "intro": "Useful information for planning your stay in Rome. Open a question to read the answer.",
-    "help": "For special requests, we're here to help.",
+    "intro2": "For special requests, we are at your disposal.",
     "write": "Message us on WhatsApp ↗",
     "items": [
       {

@@ -208,10 +208,10 @@
     "message": "Ciao, sono {{name}}. Vorrei disponibilità dal {{arrival}} al {{departure}} per {{guests}} ospiti. Zona: {{zone}}."
   },
   "faq": {
-    "eyebrow": "Your Italian Holidays · Roma",
+    "eyebrow": "Prima di partire · Durante il soggiorno",
     "title": "Domande frequenti",
     "intro": "Le informazioni utili per organizzare il tuo soggiorno a Roma. Apri una domanda per leggere la risposta.",
-    "help": "Per richieste particolari, siamo a tua disposizione.",
+    "intro2": "Per richieste particolari, siamo a tua disposizione.",
     "write": "Scrivici su WhatsApp ↗",
     "items": [
       {
