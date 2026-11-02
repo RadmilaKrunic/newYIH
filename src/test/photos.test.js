@@ -30,3 +30,12 @@ describe('siteImage', () => {
     expect(siteImage('logo.png', { '../photos/site/logo.png': '/logo' }, base)).toBe('/logo');
   });
 });
+
+describe('photo folders', () => {
+  it('has a folder in src/photos for every apartment', async () => {
+    const { existsSync } = await import('node:fs');
+    const { apartments } = await import('../data/apartments.js');
+    const missing = apartments.filter((a) => !existsSync(`src/photos/${a.folder}/README.md`));
+    expect(missing.map((a) => a.folder)).toEqual([]);
+  });
+});
