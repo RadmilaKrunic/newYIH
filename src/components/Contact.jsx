@@ -3,10 +3,16 @@ import { useTranslation } from 'react-i18next';
 import { ZONES } from '../data/apartments.js';
 import { contact, tel, whatsappUrl } from '../data/contact.js';
 
+// "2030-05-01" -> "1 maggio 2030" / "1 May 2030", so the WhatsApp message reads naturally.
+const readableDate = (iso, lang) =>
+  new Intl.DateTimeFormat(lang === 'en' ? 'en-GB' : lang, { day: 'numeric', month: 'long', year: 'numeric', timeZone: 'UTC' }).format(
+    new Date(`${iso}T00:00:00Z`),
+  );
+
 const GUEST_OPTIONS = [2, 1, ...Array.from({ length: 13 }, (_, i) => i + 3)];
 
 export default function Contact() {
-  const { t } = useTranslation();
+  const { t, i18n } = useTranslation();
   const departureRef = useRef(null);
   const [form, setForm] = useState({ arrival: '', departure: '', guests: '2', zone: '', name: '' });
   const arrivalRef = useRef(null);
@@ -28,7 +34,12 @@ export default function Contact() {
       return;
     }
     const zone = form.zone ? t(`apartments.zones.${form.zone}`) : t('contact.anyZone');
-    const message = t('contact.message', { ...form, zone });
+    const message = t('contact.message', {
+      ...form,
+      arrival: readableDate(form.arrival, i18n.language),
+      departure: readableDate(form.departure, i18n.language),
+      zone,
+    });
     window.open(whatsappUrl(message), '_blank', 'noopener');
   };
 

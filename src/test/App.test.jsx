@@ -76,7 +76,25 @@ describe('App', () => {
     fireEvent.change(within(form).getByLabelText('Your name'), { target: { value: 'Ana' } });
     fireEvent.submit(form);
     const url = decodeURIComponent(open.mock.calls[0][0]);
-    expect(url).toContain("Hi, I'm Ana. I'd like availability from 2030-05-01 to 2030-05-04 for 2 guests. Area: Any area.");
+    expect(url).toContain("Hi, I'm Ana. I'd like availability from 1 May 2030 to 4 May 2030 for 2 guests. Area: Any area.");
+    open.mockRestore();
+  });
+
+  it('puts every form field into the Italian WhatsApp message', async () => {
+    const open = vi.spyOn(window, 'open').mockImplementation(() => null);
+    renderApp('/');
+    await screen.findByText('Raccontaci la tua', { exact: false });
+    const form = document.getElementById('request');
+    const [arrival, departure] = form.querySelectorAll('input[type="date"]');
+    const [guests, zone] = form.querySelectorAll('select');
+    fireEvent.change(arrival, { target: { value: '2030-12-10' } });
+    fireEvent.change(departure, { target: { value: '2030-12-14' } });
+    fireEvent.change(guests, { target: { value: '4' } });
+    fireEvent.change(zone, { target: { value: 'monti' } });
+    fireEvent.change(within(form).getByLabelText('Il tuo nome'), { target: { value: 'Anna' } });
+    fireEvent.submit(form);
+    const url = decodeURIComponent(open.mock.calls[0][0]);
+    expect(url).toContain('Ciao, sono Anna. Vorrei disponibilità dal 10 dicembre 2030 al 14 dicembre 2030 per 4 ospiti. Zona: Monti.');
     open.mockRestore();
   });
 
