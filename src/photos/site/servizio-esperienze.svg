@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 300" role="img" aria-label="Sapori, Vespa e natura">
+<title>Sapori, Vespa e natura</title>
+<rect width="400" height="300" fill="#efe4d4"/>
+<circle cx="318" cy="78" r="34" fill="#dfcdb6"/>
+<rect y="232" width="400" height="68" fill="#e3d2bb"/>
+<g fill="none" stroke="#796044" stroke-width="3" stroke-linecap="round" stroke-linejoin="round">
+
+<path d="M90 214c0-30 20-50 52-50h40l18 50z" fill="#b9825a"/>
+<path d="M200 214h44c4-26-6-46-26-56l-10-46h-18" />
+<path d="M178 112h34"/>
+<path d="M216 158c-20 0-34 20-34 56" stroke-width="2"/>
+<path d="M120 160h52" stroke-width="5"/>
+<circle cx="110" cy="226" r="20" fill="#f6f3ec"/><circle cx="240" cy="226" r="20" fill="#f6f3ec"/>
+<circle cx="110" cy="226" r="6"/><circle cx="240" cy="226" r="6"/>
+<circle cx="214" cy="124" r="6" fill="#dfcdb6"/>
+<path d="M298 140h40l-4 30a16 16 0 0 1-32 0z" fill="#f6f3ec"/>
+<path d="M300 158h36l-2 12a16 16 0 0 1-32 0z" fill="#b9825a" stroke="none"/>
+<path d="M318 186v40M302 232h32"/>
+<path d="M40 232c0-22 10-40 24-50M64 182c-4 16-14 26-24 30M50 200c10 0 18-4 22-10" stroke-width="2"/>
+
+</g>
+</svg>

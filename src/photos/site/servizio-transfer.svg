@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 300" role="img" aria-label="Transfer privati">
+<title>Transfer privati</title>
+<rect width="400" height="300" fill="#efe4d4"/>
+<circle cx="318" cy="78" r="34" fill="#dfcdb6"/>
+<rect y="232" width="400" height="68" fill="#e3d2bb"/>
+<g fill="none" stroke="#796044" stroke-width="3" stroke-linecap="round" stroke-linejoin="round">
+
+<path d="M40 232v-58a14 14 0 0 1 14-14h132a14 14 0 0 1 14 14v58" fill="#f6f3ec" stroke-width="2"/>
+<path d="M40 192h160M40 214h160" stroke-width="2"/>
+<path d="M62 192v-18a8 8 0 0 1 16 0v18M98 192v-18a8 8 0 0 1 16 0v18M134 192v-18a8 8 0 0 1 16 0v18M170 192v-18a8 8 0 0 1 16 0v18" stroke-width="2"/>
+<path d="M120 236h220l-6-30-36-6-28-26h-74l-34 30-36 6z" fill="#c7af91"/>
+<path d="M190 176l-26 26h112l-22-26z" fill="#f6f3ec"/>
+<path d="M222 176v26"/>
+<circle cx="166" cy="238" r="16" fill="#f6f3ec"/><circle cx="296" cy="238" r="16" fill="#f6f3ec"/>
+<circle cx="166" cy="238" r="5"/><circle cx="296" cy="238" r="5"/>
+<path d="M330 218h10" stroke="#b9825a"/>
+<path d="M20 262h70M110 262h40M200 262h80M310 262h60" stroke-width="2"/>
+
+</g>
+</svg>

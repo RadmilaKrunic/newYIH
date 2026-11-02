@@ -1,0 +1,24 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 300" role="img" aria-label="Case vacanze">
+<title>Case vacanze</title>
+<rect width="400" height="300" fill="#efe4d4"/>
+<circle cx="318" cy="78" r="34" fill="#dfcdb6"/>
+<rect y="232" width="400" height="68" fill="#e3d2bb"/>
+<g fill="none" stroke="#796044" stroke-width="3" stroke-linecap="round" stroke-linejoin="round">
+
+<rect x="110" y="70" width="180" height="162" fill="#f6f3ec"/>
+<path d="M100 70h200M104 62h192v8"/>
+<path d="M110 120h180M110 172h180" stroke-width="2"/>
+<g fill="#c7af91">
+<rect x="128" y="82" width="22" height="30"/><rect x="189" y="82" width="22" height="30"/><rect x="250" y="82" width="22" height="30"/>
+<rect x="128" y="132" width="22" height="30"/><rect x="250" y="132" width="22" height="30"/>
+</g>
+<path d="M180 232v-46a20 20 0 0 1 40 0v46" fill="#dfcdb6"/>
+<path d="M200 166v66" stroke-width="2"/>
+<path d="M176 132h48v30h-48z" fill="#c7af91"/>
+<path d="M168 162h64" />
+<path d="M70 232v-40m-10 14 10-14 10 14" stroke-width="2"/>
+<path d="M330 232v-40m-10 14 10-14 10 14" stroke-width="2"/>
+<g transform="translate(300 250) rotate(-20)"><circle r="9" fill="#dfcdb6"/><path d="M9 0h34M33 0v8M40 0v6"/></g>
+
+</g>
+</svg>

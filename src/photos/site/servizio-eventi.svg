@@ -1,0 +1,25 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 300" role="img" aria-label="Eventi e occasioni speciali">
+<title>Eventi e occasioni speciali</title>
+<rect width="400" height="300" fill="#efe4d4"/>
+<circle cx="318" cy="78" r="34" fill="#dfcdb6"/>
+<rect y="232" width="400" height="68" fill="#e3d2bb"/>
+<g fill="none" stroke="#796044" stroke-width="3" stroke-linecap="round" stroke-linejoin="round">
+
+<path d="M30 60c60 50 120 50 170 20s110-30 170 10" stroke-width="2"/>
+<g fill="#dfcdb6" stroke-width="2"><circle cx="70" cy="86" r="7"/><circle cx="120" cy="100" r="7"/><circle cx="170" cy="94" r="7"/><circle cx="230" cy="70" r="7"/><circle cx="290" cy="66" r="7"/><circle cx="340" cy="80" r="7"/></g>
+<g transform="rotate(-12 170 150)">
+<path d="M150 110h40l-4 60a16 16 0 0 1-32 0z" fill="#f6f3ec"/>
+<path d="M153 136h34l-1 34a16 16 0 0 1-32 0z" fill="#c7af91" stroke="none"/>
+<path d="M170 186v40M154 230h32"/>
+</g>
+<g transform="rotate(12 236 150)">
+<path d="M216 110h40l-4 60a16 16 0 0 1-32 0z" fill="#f6f3ec"/>
+<path d="M219 136h34l-1 34a16 16 0 0 1-32 0z" fill="#c7af91" stroke="none"/>
+<path d="M236 186v40M220 230h32"/>
+</g>
+<path d="M203 96v-14M190 100l-8-10M216 100l8-10" stroke="#b9825a"/>
+<path d="M60 232c0-24 20-30 28-48 8 18 28 24 28 48" fill="#dfcdb6" stroke-width="2"/>
+<path d="M300 232c0-20 14-26 20-40 6 14 20 20 20 40" fill="#dfcdb6" stroke-width="2"/>
+
+</g>
+</svg>

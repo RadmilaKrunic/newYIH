@@ -99,6 +99,14 @@ describe('App', () => {
     open.mockRestore();
   });
 
+  it('shows an image on every service card', async () => {
+    renderApp('/en/');
+    await screen.findByText('Your holiday in Rome,', { exact: false });
+    const cards = document.querySelectorAll('.services article');
+    expect(cards).toHaveLength(8);
+    cards.forEach((card) => expect(card.querySelector('img')).not.toBeNull());
+  });
+
   it('renders the FAQ page', async () => {
     renderApp('/en/faq/');
     expect(await screen.findByRole('heading', { name: 'Frequently asked questions' })).toBeInTheDocument();
