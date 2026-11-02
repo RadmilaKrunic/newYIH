@@ -21,3 +21,8 @@
 
 .map-frame:empty{display:none}
 .field-error{color:#9b3b22;font-size:12px}
+
+/* Host portrait on desktop: the column is wider than the photo's shape, so `cover` crops it
+   top and bottom; anchor it to the top so the whole face stays in view.
+   Tablet and mobile keep the example's 50% 38%, which already shows the full photo. */
+@media(min-width:851px){.portrait img{object-position:50% 0}}
