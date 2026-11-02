@@ -13,7 +13,8 @@ export default function Footer() {
         </div>
         <div>
           <a href={contact.currentSite} target="_blank" rel="noopener noreferrer">{t('footer.currentSite')}</a>
-          <br />© {new Date().getFullYear()} Your Italian Holidays
+          <br />
+          <span suppressHydrationWarning>© {new Date().getFullYear()} Your Italian Holidays</span>
         </div>
       </footer>
       <a className="btn float" href={whatsappUrl()} target="_blank" rel="noopener noreferrer">

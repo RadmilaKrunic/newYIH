@@ -26,5 +26,15 @@ Add an entry to `src/data/apartments.js` (`id`, `name`, `zone`, `address`, `fold
 ## Languages
 
 Texts live in `src/i18n/locales/it.json` and `en.json` (same keys in both; a test checks this).
-The chosen language is remembered in the browser. To add a language, copy `it.json`, translate it,
-and register it in `src/i18n/index.js`.
+The language comes from the URL (`/` Italian, `/en/` English). To add a language, copy `it.json`, translate it,
+and register it in `src/i18n/index.js` and `src/i18n/paths.js`.
+
+## SEO
+
+- Each language has its own URL: Italian at `/` and `/faq/`, English at `/en/` and `/en/faq/`.
+- `npm run build` prerenders every page to real HTML (`dist/index.html`, `dist/en/index.html`, ...), so search engines
+  and link previews see the full content, title, description, canonical URL, hreflang links, Open Graph tags and
+  JSON-LD structured data (LodgingBusiness with every apartment, plus FAQPage) without running JavaScript.
+- The build also writes `dist/sitemap.xml` and `dist/robots.txt`.
+- Set `VITE_SITE_URL` to the live address (default `https://www.youritalianholidays.com`); it is used in every absolute URL.
+- Page titles and descriptions are in the `meta` section of each language file in `src/i18n/locales/`.

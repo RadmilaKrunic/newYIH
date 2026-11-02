@@ -10,7 +10,8 @@ if (!HTMLDialogElement.prototype.showModal) {
   HTMLDialogElement.prototype.close = function close() {
     if (!this.open) return;
     this.open = false;
-    this.dispatchEvent(new Event('close'));
+    // Like browsers, fire 'close' asynchronously.
+    setTimeout(() => this.dispatchEvent(new Event('close')));
   };
 }
 

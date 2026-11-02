@@ -8,17 +8,21 @@ export default function Faq() {
     <div className="faq-main">
       <div className="eyebrow">{t('faq.eyebrow')}</div>
       <h1>{t('faq.title')}</h1>
-      <p className="faq-intro">{t('faq.intro')}</p>
+      <p className="faq-intro">
+        {t('faq.intro')}
+        <br />
+        {t('faq.intro2')}
+      </p>
       <div className="faq-list">
         {items.map((item) => (
-          <details key={item.q}>
+          // Open by default, as on the example site; visitors can still collapse each one.
+          <details key={item.q} open>
             <summary>{item.q}</summary>
             <p>{item.a}</p>
           </details>
         ))}
       </div>
       <div className="faq-help">
-        <p>{t('faq.help')}</p>
         <a className="btn" href={whatsappUrl()} target="_blank" rel="noopener noreferrer">{t('faq.write')}</a>
       </div>
     </div>

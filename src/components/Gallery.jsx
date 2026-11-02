@@ -18,10 +18,11 @@ export default function Gallery({ home, onClose }) {
   const [showMap, setShowMap] = useState(false);
   const { id, name, title, address, photos } = home;
 
+  // No cleanup that closes the dialog: React's StrictMode runs effects twice in
+  // development, and closing here fired onClose and shut the modal right after it opened.
+  // Unmounting removes the dialog from the page, which closes it anyway.
   useEffect(() => {
-    const dialog = ref.current;
-    if (!dialog.open) dialog.showModal();
-    return () => dialog.open && dialog.close();
+    if (!ref.current.open) ref.current.showModal();
   }, []);
 
   return (
