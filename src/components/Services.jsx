@@ -1,5 +1,20 @@
 import { useTranslation } from 'react-i18next';
-import { siteImage } from '../data/photos.js';
+import { localSiteImage, siteImage } from '../data/photos.js';
+
+// One photo per card, in card order, from src/photos/site/. Cards whose file is missing show no photo.
+// The luggage photo also falls back to the example site until it is copied locally.
+const SERVICE_PHOTOS = [
+  'servizio-case-vacanze.jpg',
+  'servizio-transfer.jpg',
+  'deposito-bagagli.jpg',
+  'servizio-tour.jpg',
+  'servizio-gite.jpg',
+  'servizio-esperienze.jpg',
+  'servizio-eventi.jpg',
+  'servizio-su-misura.jpg',
+];
+
+const servicePhoto = (i) => (i === 2 ? siteImage(SERVICE_PHOTOS[i]) : SERVICE_PHOTOS[i] && localSiteImage(SERVICE_PHOTOS[i]));
 import { whatsappUrl } from '../data/contact.js';
 
 export default function Services() {
@@ -21,7 +36,9 @@ export default function Services() {
               {String(i + 1).padStart(2, '0')} / {s.kicker}
             </span>
             <h3>{s.title}</h3>
-            {i === 2 && <img className="luggage-photo" src={siteImage('deposito-bagagli.jpg')} alt={t('services.photoAlt')} loading="lazy" />}
+            {servicePhoto(i) && (
+              <img className="luggage-photo" src={servicePhoto(i)} alt={i === 2 ? t('services.photoAlt') : s.title} loading="lazy" />
+            )}
             <p>{s.text}</p>
           </article>
         ))}
