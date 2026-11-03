@@ -12,7 +12,7 @@ Use landscape photos (about 4:3).
 |---|---|
 | 01 Case vacanze & gestione | `servizio-case-vacanze` |
 | 02 Transfer privati & NCC | `servizio-transfer` |
-| 03 Deposito bagagli & doccia | `deposito-bagagli` |
+| 03 Deposito bagagli & doccia | `deposito-bagagli` (the original photo) |
 | 04 Tour guidati privati | `servizio-tour` |
 | 05 Gite fuori Roma & barca | `servizio-gite` |
 | 06 Sapori, Vespa & natura | `servizio-esperienze` |
