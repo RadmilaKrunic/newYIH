@@ -100,12 +100,17 @@ describe('App', () => {
     open.mockRestore();
   });
 
-  it('shows an image on every service card', async () => {
+  it('shows an image on every service card when site-config.json turns the drawings on', async () => {
+    // Set the switch explicitly so the test passes whatever public/site-config.json says.
+    resetSiteConfig();
+    const fetchSpy = vi.spyOn(globalThis, 'fetch').mockResolvedValue({ ok: true, json: async () => ({ showServiceIllustrations: true }) });
     renderApp('/en/');
     await screen.findByText('Your holiday in Rome,', { exact: false });
     const cards = document.querySelectorAll('.services article');
     expect(cards).toHaveLength(8);
-    cards.forEach((card) => expect(card.querySelector('img')).not.toBeNull());
+    await waitFor(() => expect(document.querySelectorAll('.services article img')).toHaveLength(8));
+    fetchSpy.mockRestore();
+    resetSiteConfig();
   });
 
   it('hides the service drawings, but not the luggage photo, when site-config.json turns them off', async () => {
