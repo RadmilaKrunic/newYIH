@@ -1,6 +1,7 @@
 import { useTranslation } from 'react-i18next';
 import { localSiteImage, siteImage } from '../data/photos.js';
 import { whatsappUrl } from '../data/contact.js';
+import { useSiteConfig } from '../siteConfig.js';
 
 // One image per card, in card order, from src/photos/site/. A photo (<name>.jpg) wins over the
 // drawn illustration (<name>.svg); the luggage card falls back to the example site's photo.
@@ -15,15 +16,20 @@ const SERVICE_IMAGES = [
   'servizio-su-misura',
 ];
 
-const serviceImage = (i) => {
+const LUGGAGE = 2;
+
+// The luggage card always keeps its photo; the other cards' images follow the
+// showServiceIllustrations switch in site-config.json.
+const serviceImage = (i, showOthers) => {
   const name = SERVICE_IMAGES[i];
-  if (!name) return undefined;
+  if (!name || (i !== LUGGAGE && !showOthers)) return undefined;
   const local = localSiteImage(`${name}.jpg`) ?? localSiteImage(`${name}.svg`);
-  return local ?? (i === 2 ? siteImage(`${name}.jpg`) : undefined);
+  return local ?? (i === LUGGAGE ? siteImage(`${name}.jpg`) : undefined);
 };
 
 export default function Services() {
   const { t } = useTranslation();
+  const { showServiceIllustrations } = useSiteConfig();
   const items = t('services.items', { returnObjects: true });
   return (
     <section className="service-section" id="esperienze">
@@ -41,8 +47,8 @@ export default function Services() {
               {String(i + 1).padStart(2, '0')} / {s.kicker}
             </span>
             <h3>{s.title}</h3>
-            {serviceImage(i) && (
-              <img className="luggage-photo" src={serviceImage(i)} alt={i === 2 ? t('services.photoAlt') : s.title} loading="lazy" />
+            {serviceImage(i, showServiceIllustrations) && (
+              <img className="luggage-photo" src={serviceImage(i, showServiceIllustrations)} alt={i === LUGGAGE ? t('services.photoAlt') : s.title} loading="lazy" />
             )}
             <p>{s.text}</p>
           </article>

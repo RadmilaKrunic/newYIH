@@ -6,6 +6,7 @@ import i18n from '../i18n/index.js';
 import App from '../App.jsx';
 import { apartments } from '../data/apartments.js';
 import { photosFor } from '../data/photos.js';
+import { resetSiteConfig } from '../siteConfig.js';
 
 // StrictMode, as in src/main.jsx, so double-run effects behave as in development.
 const renderApp = (path = '/') =>
@@ -105,6 +106,18 @@ describe('App', () => {
     const cards = document.querySelectorAll('.services article');
     expect(cards).toHaveLength(8);
     cards.forEach((card) => expect(card.querySelector('img')).not.toBeNull());
+  });
+
+  it('hides the service drawings, but not the luggage photo, when site-config.json turns them off', async () => {
+    resetSiteConfig();
+    const fetchSpy = vi.spyOn(globalThis, 'fetch').mockResolvedValue({ ok: true, json: async () => ({ showServiceIllustrations: false }) });
+    renderApp('/en/');
+    await screen.findByText('Your holiday in Rome,', { exact: false });
+    await waitFor(() => expect(document.querySelectorAll('.services article img')).toHaveLength(1));
+    expect(document.querySelectorAll('.services article')[2].querySelector('img')).not.toBeNull();
+    expect(fetchSpy).toHaveBeenCalledWith('/site-config.json', { cache: 'no-store' });
+    fetchSpy.mockRestore();
+    resetSiteConfig();
   });
 
   it('renders the FAQ page', async () => {
