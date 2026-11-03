@@ -1,0 +1,23 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 300" role="img" aria-label="Gite e barca">
+<title>Gite e barca</title>
+<rect width="400" height="300" fill="#efe4d4"/>
+<circle cx="318" cy="78" r="34" fill="#dfcdb6"/>
+<rect y="232" width="400" height="68" fill="#e3d2bb"/>
+<g fill="none" stroke="#796044" stroke-width="3" stroke-linecap="round" stroke-linejoin="round">
+
+<path d="M0 200c40-10 70-60 110-70s50 20 80 30 30-30 60-30 40 30 70 40 50 20 80 30H0z" fill="#c7af91" stroke="none"/>
+<path d="M0 200c40-10 70-60 110-70s50 20 80 30 30-30 60-30 40 30 70 40 50 20 80 30" stroke-width="2"/>
+<g fill="#f6f3ec" stroke-width="2">
+<rect x="70" y="150" width="20" height="18"/><rect x="96" y="140" width="18" height="16"/><rect x="120" y="150" width="22" height="18"/>
+<rect x="84" y="172" width="22" height="18"/><rect x="150" y="164" width="18" height="16"/><rect x="198" y="150" width="20" height="18"/>
+</g>
+<path d="M118 140v-16M110 132h16" stroke-width="2"/>
+<rect y="200" width="400" height="100" fill="#f3eadc" stroke="none"/>
+<path d="M0 200h400" stroke-width="2"/>
+<path d="M30 262c10-6 20-6 30 0s20 6 30 0M300 280c10-6 20-6 30 0s20 6 30 0M160 286c10-6 20-6 30 0" stroke-width="2"/>
+<path d="M220 232h150l-22 26H244z" fill="#b9825a"/>
+<path d="M292 232V150l44 68h-44" fill="#f6f3ec"/>
+<path d="M292 150l-34 68h34" fill="#dfcdb6"/>
+
+</g>
+</svg>

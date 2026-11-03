@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 300" role="img" aria-label="Servizi su misura">
+<title>Servizi su misura</title>
+<rect width="400" height="300" fill="#efe4d4"/>
+<circle cx="318" cy="78" r="34" fill="#dfcdb6"/>
+<rect y="232" width="400" height="68" fill="#e3d2bb"/>
+<g fill="none" stroke="#796044" stroke-width="3" stroke-linecap="round" stroke-linejoin="round">
+
+<rect x="110" y="120" width="180" height="112" rx="14" fill="#c7af91"/>
+<path d="M150 120l14-22h72l14 22" fill="#f6f3ec"/>
+<circle cx="200" cy="178" r="38" fill="#f6f3ec"/>
+<circle cx="200" cy="178" r="22" fill="#dfcdb6"/>
+<circle cx="192" cy="170" r="5" fill="#f6f3ec" stroke="none"/>
+<rect x="128" y="132" width="20" height="10" rx="3" fill="#f6f3ec" stroke-width="2"/>
+<path d="M110 150h22M268 150h22" stroke-width="2"/>
+<path d="M330 120v28M316 134h28" stroke="#b9825a"/>
+<path d="M70 96v18M61 105h18" stroke-width="2"/>
+
+</g>
+</svg>

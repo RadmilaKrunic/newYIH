@@ -3,7 +3,7 @@
 // Local files in src/photos/ always win. Vite picks up every image in that
 // folder at build time, so adding a photo is just adding a file.
 
-const localFiles = import.meta.glob('../photos/**/*.{jpg,jpeg,png,webp,avif,JPG,JPEG,PNG,WEBP}', {
+const localFiles = import.meta.glob('../photos/**/*.{jpg,jpeg,png,webp,avif,svg,JPG,JPEG,PNG,WEBP,SVG}', {
   eager: true,
   query: '?url',
   import: 'default',

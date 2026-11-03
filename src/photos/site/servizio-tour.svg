@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 300" role="img" aria-label="Tour guidati">
+<title>Tour guidati</title>
+<rect width="400" height="300" fill="#efe4d4"/>
+<circle cx="318" cy="78" r="34" fill="#dfcdb6"/>
+<rect y="232" width="400" height="68" fill="#e3d2bb"/>
+<g fill="none" stroke="#796044" stroke-width="3" stroke-linecap="round" stroke-linejoin="round">
+
+<path d="M70 232V132c40-26 220-26 260 0v100" fill="#f6f3ec"/>
+<path d="M330 132v-26c-40-24-150-30-200-14" fill="#f6f3ec"/>
+<path d="M70 132c40-26 220-26 260 0" />
+<path d="M70 168h260M70 200h260" stroke-width="2"/>
+<g stroke-width="2" fill="#c7af91">
+<path d="M88 200v-22a8 8 0 0 1 16 0v22M124 200v-22a8 8 0 0 1 16 0v22M160 200v-22a8 8 0 0 1 16 0v22M196 200v-22a8 8 0 0 1 16 0v22M232 200v-22a8 8 0 0 1 16 0v22M268 200v-22a8 8 0 0 1 16 0v22M304 200v-22a8 8 0 0 1 16 0v22"/>
+<path d="M88 232v-18a8 8 0 0 1 16 0v18M124 232v-18a8 8 0 0 1 16 0v18M160 232v-18a8 8 0 0 1 16 0v18M196 232v-18a8 8 0 0 1 16 0v18M232 232v-18a8 8 0 0 1 16 0v18M268 232v-18a8 8 0 0 1 16 0v18M304 232v-18a8 8 0 0 1 16 0v18"/>
+<path d="M94 160v-12a6 6 0 0 1 12 0v12M134 156v-12a6 6 0 0 1 12 0v12M174 154v-12a6 6 0 0 1 12 0v12M214 154v-12a6 6 0 0 1 12 0v12M254 156v-12a6 6 0 0 1 12 0v12M294 160v-12a6 6 0 0 1 12 0v12"/>
+</g>
+<path d="M40 232v-34M30 210l10-12 10 12" stroke-width="2"/>
+<path d="M360 232v-46M350 200l10-14 10 14M352 214l8-8 8 8" stroke-width="2"/>
+
+</g>
+</svg>

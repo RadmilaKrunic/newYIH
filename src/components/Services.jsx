@@ -1,21 +1,26 @@
 import { useTranslation } from 'react-i18next';
 import { localSiteImage, siteImage } from '../data/photos.js';
+import { whatsappUrl } from '../data/contact.js';
 
-// One photo per card, in card order, from src/photos/site/. Cards whose file is missing show no photo.
-// The luggage photo also falls back to the example site until it is copied locally.
-const SERVICE_PHOTOS = [
-  'servizio-case-vacanze.jpg',
-  'servizio-transfer.jpg',
-  'deposito-bagagli.jpg',
-  'servizio-tour.jpg',
-  'servizio-gite.jpg',
-  'servizio-esperienze.jpg',
-  'servizio-eventi.jpg',
-  'servizio-su-misura.jpg',
+// One image per card, in card order, from src/photos/site/. A photo (<name>.jpg) wins over the
+// drawn illustration (<name>.svg); the luggage card falls back to the example site's photo.
+const SERVICE_IMAGES = [
+  'servizio-case-vacanze',
+  'servizio-transfer',
+  'deposito-bagagli',
+  'servizio-tour',
+  'servizio-gite',
+  'servizio-esperienze',
+  'servizio-eventi',
+  'servizio-su-misura',
 ];
 
-const servicePhoto = (i) => (i === 2 ? siteImage(SERVICE_PHOTOS[i]) : SERVICE_PHOTOS[i] && localSiteImage(SERVICE_PHOTOS[i]));
-import { whatsappUrl } from '../data/contact.js';
+const serviceImage = (i) => {
+  const name = SERVICE_IMAGES[i];
+  if (!name) return undefined;
+  const local = localSiteImage(`${name}.jpg`) ?? localSiteImage(`${name}.svg`);
+  return local ?? (i === 2 ? siteImage(`${name}.jpg`) : undefined);
+};
 
 export default function Services() {
   const { t } = useTranslation();
@@ -36,8 +41,8 @@ export default function Services() {
               {String(i + 1).padStart(2, '0')} / {s.kicker}
             </span>
             <h3>{s.title}</h3>
-            {servicePhoto(i) && (
-              <img className="luggage-photo" src={servicePhoto(i)} alt={i === 2 ? t('services.photoAlt') : s.title} loading="lazy" />
+            {serviceImage(i) && (
+              <img className="luggage-photo" src={serviceImage(i)} alt={i === 2 ? t('services.photoAlt') : s.title} loading="lazy" />
             )}
             <p>{s.text}</p>
           </article>
