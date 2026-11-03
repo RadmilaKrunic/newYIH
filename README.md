@@ -19,6 +19,19 @@ Until a folder has local files, the site shows the original photos from the exam
 Run `npm run fetch-photos` once to copy all of them into `src/photos/` and commit them,
 so the site no longer depends on the example site.
 
+## Site switches (no rebuild needed)
+
+`site-config.json` in the published site's root folder holds switches the page reads every time it loads:
+
+```json
+{ "showServiceIllustrations": true }
+```
+
+- `showServiceIllustrations`: `false` hides the images on the service cards; the luggage photo always stays.
+
+On the live server, edit that file and reload the page: no build or deploy needed.
+To change the default for future builds, edit `public/site-config.json`.
+
 ## Adding an apartment
 
 Add an entry to `src/data/apartments.js` (`id`, `name`, `zone`, `address`, `folder`) and put its photos in `src/photos/<folder>/`.
