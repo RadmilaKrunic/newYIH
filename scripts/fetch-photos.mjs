@@ -12,7 +12,7 @@ const base = process.env.VITE_REMOTE_PHOTO_BASE ?? 'https://your-italian-holiday
 
 // Files are renamed 01.jpg, 02.jpg... so they keep the example site's order.
 const jobs = [
-  ...['logo.png', 'bruna-doppiopetto.jpg', 'deposito-bagagli.jpg'].map((file) => ({ url: `${base}${file}`, dest: join(root, 'site', file) })),
+  ...['logo.png', 'deposito-bagagli.jpg'].map((file) => ({ url: `${base}${file}`, dest: join(root, 'site', file) })),
   ...apartments.flatMap(({ folder, seedPhotos }) =>
     seedPhotos.map((file, i) => ({
       url: `${base}${folder}/${file}`,

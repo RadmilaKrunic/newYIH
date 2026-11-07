@@ -20,7 +20,7 @@ function structuredData(t, lang, page, url) {
     description: t('meta.description'),
     url: absolute(localePath(lang)),
     logo: absolute(siteImage('logo.png')),
-    image: absolute(siteImage('bruna-doppiopetto.jpg')),
+    image: absolute(siteImage('bruna-doppiopetto.png')),
     email: contact.email,
     telephone: contact.phone.replace(/\s+/g, ''),
     foundingDate: '2012',
@@ -79,7 +79,7 @@ export function seoFor(t, lang, page = '') {
       ...LANGUAGES.map((l) => ({ hreflang: l.code, href: absolute(localePath(l.code, page)) })),
       { hreflang: 'x-default', href: absolute(localePath(DEFAULT_LANG, page)) },
     ],
-    image: absolute(siteImage('bruna-doppiopetto.jpg')),
+    image: absolute(siteImage('bruna-doppiopetto.png')),
     ogLocale: t('meta.ogLocale'),
     jsonLd: structuredData(t, lang, page, url),
   };

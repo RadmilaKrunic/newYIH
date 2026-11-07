@@ -21,7 +21,7 @@ export default function PersonalHero() {
         <a className="btn booking" href="#appartamenti">{t('hero.cta')}</a>
       </div>
       <div className="portrait">
-        <img src={siteImage('bruna-doppiopetto.jpg')} alt={t('hero.photoAlt')} fetchPriority="high" />
+        <img src={siteImage('bruna-doppiopetto.png')} alt={t('hero.photoAlt')} fetchPriority="high" />
         <span>{t('hero.badge')}</span>
       </div>
     </div>
