@@ -208,31 +208,101 @@
     "message": "Hi, I'm {{name}}. I'd like availability from {{arrival}} to {{departure}} for {{guests}} guests. Area: {{zone}}."
   },
   "faq": {
-    "eyebrow": "Before you leave · During your stay",
+    "eyebrow": "Your Italian Holidays",
     "title": "Frequently asked questions",
-    "intro": "Useful information for planning your stay in Rome. Open a question to read the answer.",
-    "intro2": "For special requests, we are at your disposal.",
+    "topicsLabel": "Topics",
+    "helpText": "Can't find your answer? For special requests, we are at your disposal.",
     "write": "Message us on WhatsApp ↗",
-    "items": [
+    "topics": [
       {
-        "q": "What are the check-in and check-out times?",
-        "a": "Check-in is from 15:00 and check-out is by 10:00. Let us know your arrival time so we can arrange your welcome and send you the access instructions for your apartment."
+        "id": "apartments",
+        "label": "Apartments",
+        "items": [
+          {
+            "q": "Which homes are on the same floor near the Trevi Fountain?",
+            "a": "Noah, Chloè and Trevi Luxury are all on the 1st floor of the same building at Via del Tritone 53. They are ideal if you are travelling with several families or friends and want separate homes close together. Casa Linda (2nd floor) and Deluxe (4th floor) are in the same building, all with a lift."
+          },
+          {
+            "q": "Where can eight of us stay near the Spanish Steps?",
+            "a": "The Spagna Suite at Via del Babuino 72 sleeps up to 8: three bedrooms, each with a double bed, and a living room with a sofa bed. It is on the 2nd floor with a lift."
+          },
+          {
+            "q": "Which apartment has a private terrace?",
+            "a": "Domus Maya, at Via dei Quattro Cantoni 6 in the Monti and Colosseum area, has a small private terrace. The Veneto Luxury Big Apartment has a small balcony overlooking Via Lombardia."
+          },
+          {
+            "q": "Which home suits a large group?",
+            "a": "The Veneto Luxury Big Apartment, next to Via Veneto, sleeps 12 to 15: five double bedrooms, three extra single beds, a living room with a sofa bed, a kitchen and three full bathrooms. For even larger groups we can suggest several apartments close together."
+          },
+          {
+            "q": "Can you add a single bed?",
+            "a": "Yes, in some homes such as Noah, Chloè and Casa Linda a single bed can be added on request. Let us know when you book and we'll have it ready before you arrive."
+          },
+          {
+            "q": "Do the apartments have a lift?",
+            "a": "Yes, all our apartments are in buildings with a lift. Each listing shows which floor the home is on."
+          },
+          {
+            "q": "Where can I see where the apartments are?",
+            "a": "Every listing has a “View on map” link. When you open “See the home and all photos” you'll also find the address and a button to show the map right in the apartment details."
+          }
+        ]
       },
       {
-        "q": "Can I leave my luggage before check-in or after check-out?",
-        "a": "You can use our Tourist Station Trevi at Vicolo del Gallinaccio 7, open Monday to Saturday from 09:00 to 16:00. Contact us to check availability and the cost of luggage storage."
+        "id": "arrival",
+        "label": "Arrival & departure",
+        "items": [
+          {
+            "q": "What are the check-in and check-out times?",
+            "a": "Check-in is from 15:00 and check-out is by 10:00. Let us know your arrival time so we can arrange your welcome and send you the access instructions for your apartment."
+          },
+          {
+            "q": "How do I get the keys?",
+            "a": "We coordinate check-in and key handover. A few days before you arrive, send us your expected arrival time and we'll send you the instructions and the meeting point."
+          },
+          {
+            "q": "Can I leave my luggage before check-in or after check-out?",
+            "a": "You can use our Tourist Station Trevi at Vicolo del Gallinaccio 7, open Monday to Saturday from 09:00 to 16:00. Contact us to check availability and the cost of luggage storage."
+          },
+          {
+            "q": "Can I take a shower after check-out?",
+            "a": "Yes, on request Tourist Station Trevi offers a private shower with clean towels and toiletries. It is handy before check-in, or after check-out if your flight leaves late."
+          },
+          {
+            "q": "Can you arrange an airport transfer?",
+            "a": "Yes, we book private door-to-door transfers to and from Fiumicino, Ciampino and the cruise port, with cars, minivans or luxury vehicles with driver. Send us your flight and group size and we'll confirm price and availability."
+          }
+        ]
       },
       {
-        "q": "Can you arrange a transfer or experiences in Rome?",
-        "a": "Yes, through our partners we can book private transfers, tours and experiences. Tell us what you need: we confirm availability, prices and conditions before you book."
-      },
-      {
-        "q": "How can I reach you during my stay?",
-        "a": "For information and assistance you can call or message us on +39 347 809 1603. For emergencies during your stay, our number is +39 351 391 5959."
-      },
-      {
-        "q": "Where can I see where the apartments are?",
-        "a": "Every listing has a “View on map” link. When you open “See the home and all photos” you'll also find the address and a button to show the map right in the apartment details."
+        "id": "services",
+        "label": "Services",
+        "items": [
+          {
+            "q": "Can you arrange a transfer or experiences in Rome?",
+            "a": "Yes, through our partners we can book private transfers, tours and experiences. Tell us what you need: we confirm availability, prices and conditions before you book."
+          },
+          {
+            "q": "Do you arrange private guided tours?",
+            "a": "We put you in touch with guides and operators to visit the Colosseum, the Vatican and the historic centre, choosing the route that best suits your interests."
+          },
+          {
+            "q": "Can we take day trips outside Rome?",
+            "a": "Yes, through our partners we arrange excursions to Florence, Naples, Pompeii and the Amalfi Coast, plus boat tours in Rome, Amalfi and Capri. Itineraries and availability to be agreed."
+          },
+          {
+            "q": "Can you help with a special occasion?",
+            "a": "Gladly: birthdays, surprise parties, proposals, anniversaries and intimate weddings. Tell us your idea and we'll find the right solution together."
+          },
+          {
+            "q": "Are babysitters or photographers available?",
+            "a": "Yes, on request we can find babysitters, photographers and assistance for special needs during your stay, as well as urgent cleaning in the apartment."
+          },
+          {
+            "q": "How can I reach you during my stay?",
+            "a": "For information and assistance you can call or message us on +39 347 809 1603. For emergencies during your stay, our number is +39 351 391 5959."
+          }
+        ]
       }
     ]
   },

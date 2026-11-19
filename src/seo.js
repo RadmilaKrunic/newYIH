@@ -56,7 +56,7 @@ function structuredData(t, lang, page, url) {
       '@context': 'https://schema.org',
       '@type': 'FAQPage',
       url,
-      mainEntity: t('faq.items', { returnObjects: true }).map(({ q, a }) => ({
+      mainEntity: t('faq.topics', { returnObjects: true }).flatMap((topic) => topic.items).map(({ q, a }) => ({
         '@type': 'Question',
         name: q,
         acceptedAnswer: { '@type': 'Answer', text: a },
