@@ -128,6 +128,23 @@ describe('App', () => {
   it('renders the FAQ page', async () => {
     renderApp('/en/faq/');
     expect(await screen.findByRole('heading', { name: 'Frequently asked questions' })).toBeInTheDocument();
-    expect(screen.getByText('What are the check-in and check-out times?')).toBeInTheDocument();
+    expect(screen.getByRole('tab', { name: 'Apartments' })).toHaveAttribute('aria-selected', 'true');
+    expect(screen.getByRole('heading', { name: 'Apartments', level: 2 })).toBeInTheDocument();
+    expect(screen.queryByText('What are the check-in and check-out times?')).toBeNull();
+  });
+
+  it('opens an answer below its question and switches topic from the folders', async () => {
+    renderApp('/faq/');
+    const question = await screen.findByRole('button', { name: 'Quale appartamento ha un terrazzino privato?' });
+    const answer = screen.getByText(/Domus Maya, in Via dei Quattro Cantoni 6/);
+    expect(answer).not.toBeVisible();
+    fireEvent.click(question);
+    expect(question).toHaveAttribute('aria-expanded', 'true');
+    expect(answer).toBeVisible();
+
+    fireEvent.click(screen.getByRole('tab', { name: 'Arrivo e partenza' }));
+    expect(screen.getByRole('tab', { name: 'Arrivo e partenza' })).toHaveAttribute('aria-selected', 'true');
+    expect(screen.getByRole('button', { name: 'A che ora sono previsti check-in e check-out?' })).toHaveAttribute('aria-expanded', 'false');
+    expect(screen.queryByText('Quale appartamento ha un terrazzino privato?')).toBeNull();
   });
 });

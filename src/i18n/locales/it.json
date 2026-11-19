@@ -208,31 +208,101 @@
     "message": "Ciao, sono {{name}}. Vorrei disponibilità dal {{arrival}} al {{departure}} per {{guests}} ospiti. Zona: {{zone}}."
   },
   "faq": {
-    "eyebrow": "Prima di partire · Durante il soggiorno",
+    "eyebrow": "Your Italian Holidays",
     "title": "Domande frequenti",
-    "intro": "Le informazioni utili per organizzare il tuo soggiorno a Roma. Apri una domanda per leggere la risposta.",
-    "intro2": "Per richieste particolari, siamo a tua disposizione.",
+    "topicsLabel": "Argomenti",
+    "helpText": "Non trovi la risposta? Per richieste particolari siamo a tua disposizione.",
     "write": "Scrivici su WhatsApp ↗",
-    "items": [
+    "topics": [
       {
-        "q": "A che ora sono previsti check-in e check-out?",
-        "a": "Il check-in è previsto dalle 15:00 e il check-out entro le 10:00. Comunicaci il tuo orario di arrivo per organizzare l’accoglienza e ricevere le istruzioni di accesso al tuo appartamento."
+        "id": "apartments",
+        "label": "Appartamenti",
+        "items": [
+          {
+            "q": "Quali case sono sullo stesso piano vicino a Fontana di Trevi?",
+            "a": "Noah, Chloè e Trevi Luxury si trovano tutte al 1° piano dello stesso palazzo, in Via del Tritone 53. Sono ideali se viaggiate in più famiglie o con amici e volete alloggi separati ma vicini. Nello stesso edificio ci sono anche Casa Linda (2° piano) e Deluxe (4° piano), tutte con ascensore."
+          },
+          {
+            "q": "Dove possiamo soggiornare in otto vicino a Piazza di Spagna?",
+            "a": "La Spagna Suite in Via del Babuino 72 ospita fino a 8 persone: tre camere, ciascuna con letto matrimoniale, e un salone con divano letto. È al 2° piano con ascensore."
+          },
+          {
+            "q": "Quale appartamento ha un terrazzino privato?",
+            "a": "Domus Maya, in Via dei Quattro Cantoni 6 nella zona di Monti e del Colosseo, ha un terrazzino privato. Il Veneto Luxury Big Apartment ha invece un balconcino affacciato su Via Lombardia."
+          },
+          {
+            "q": "Quale casa è adatta a un gruppo numeroso?",
+            "a": "Il Veneto Luxury Big Apartment, a fianco di Via Veneto, accoglie da 12 a 15 ospiti: cinque camere matrimoniali, tre letti singoli aggiuntivi, un salone con divano letto, cucina e tre bagni completi. Per gruppi ancora più grandi possiamo proporti più appartamenti vicini."
+          },
+          {
+            "q": "Si può aggiungere un letto singolo?",
+            "a": "Sì, in alcune case come Noah, Chloè e Casa Linda un letto singolo può essere predisposto su richiesta. Indicacelo quando prenoti, così lo prepariamo prima del tuo arrivo."
+          },
+          {
+            "q": "Gli appartamenti hanno l’ascensore?",
+            "a": "Sì, tutti i nostri appartamenti si trovano in palazzi con ascensore. Il piano di ogni casa è indicato nella sua scheda."
+          },
+          {
+            "q": "Dove posso vedere la posizione degli appartamenti?",
+            "a": "Ogni scheda contiene il collegamento “Vedi sulla mappa”. Aprendo “Scopri la casa e tutte le foto” trovi anche l’indirizzo e il pulsante per visualizzare la mappa direttamente nei dettagli dell’appartamento."
+          }
+        ]
       },
       {
-        "q": "Posso lasciare i bagagli prima del check-in o dopo il check-out?",
-        "a": "Puoi rivolgerti al nostro Tourist Station Trevi, in Vicolo del Gallinaccio 7, aperto dal lunedì al sabato dalle 09:00 alle 16:00. Contattaci per verificare disponibilità e costo del deposito bagagli."
+        "id": "arrival",
+        "label": "Arrivo e partenza",
+        "items": [
+          {
+            "q": "A che ora sono previsti check-in e check-out?",
+            "a": "Il check-in è previsto dalle 15:00 e il check-out entro le 10:00. Comunicaci il tuo orario di arrivo per organizzare l’accoglienza e ricevere le istruzioni di accesso al tuo appartamento."
+          },
+          {
+            "q": "Come ricevo le chiavi?",
+            "a": "Coordiniamo noi il check-in e la consegna delle chiavi. Qualche giorno prima dell’arrivo scrivici l’orario previsto: ti invieremo le istruzioni e il punto d’incontro."
+          },
+          {
+            "q": "Posso lasciare i bagagli prima del check-in o dopo il check-out?",
+            "a": "Puoi rivolgerti al nostro Tourist Station Trevi, in Vicolo del Gallinaccio 7, aperto dal lunedì al sabato dalle 09:00 alle 16:00. Contattaci per verificare disponibilità e costo del deposito bagagli."
+          },
+          {
+            "q": "Posso fare una doccia dopo il check-out?",
+            "a": "Sì, su richiesta al Tourist Station Trevi è disponibile una doccia privata con asciugamani puliti e prodotti da bagno. È comoda prima del check-in o dopo il check-out, se il volo parte tardi."
+          },
+          {
+            "q": "Potete organizzare il transfer dall’aeroporto?",
+            "a": "Sì, prenotiamo transfer privati da e per Fiumicino, Ciampino e il porto, con auto, minivan o veicoli di lusso con autista, porta a porta. Indicaci volo e numero di persone: ti confermiamo prezzo e disponibilità."
+          }
+        ]
       },
       {
-        "q": "Potete organizzare un transfer o esperienze a Roma?",
-        "a": "Sì, tramite i nostri partner possiamo prenotare transfer privati, tour ed esperienze. Raccontaci le tue esigenze: ti confermiamo disponibilità, costi e condizioni prima della prenotazione."
-      },
-      {
-        "q": "Come posso contattarvi durante il soggiorno?",
-        "a": "Per informazioni e assistenza puoi chiamarci o scriverci al +39 347 809 1603. Per le emergenze relative al soggiorno il nostro recapito è +39 351 391 5959."
-      },
-      {
-        "q": "Dove posso vedere la posizione degli appartamenti?",
-        "a": "Ogni scheda contiene il collegamento “Vedi sulla mappa”. Aprendo “Scopri la casa e tutte le foto” trovi anche l’indirizzo e il pulsante per visualizzare la mappa direttamente nei dettagli dell’appartamento."
+        "id": "services",
+        "label": "Servizi",
+        "items": [
+          {
+            "q": "Potete organizzare un transfer o esperienze a Roma?",
+            "a": "Sì, tramite i nostri partner possiamo prenotare transfer privati, tour ed esperienze. Raccontaci le tue esigenze: ti confermiamo disponibilità, costi e condizioni prima della prenotazione."
+          },
+          {
+            "q": "Organizzate tour guidati privati?",
+            "a": "Ti mettiamo in contatto con guide e operatori per visitare Colosseo, Vaticano e centro storico, scegliendo il percorso più adatto ai tuoi interessi."
+          },
+          {
+            "q": "Si possono fare gite fuori Roma?",
+            "a": "Sì, tramite i nostri partner organizziamo escursioni a Firenze, Napoli, Pompei e in Costiera Amalfitana, oltre a tour in barca a Roma, Amalfi e Capri. Itinerari e disponibilità sono da concordare."
+          },
+          {
+            "q": "Potete aiutarci con un’occasione speciale?",
+            "a": "Volentieri: compleanni, feste a sorpresa, proposte romantiche, anniversari e matrimoni intimi. Raccontaci la tua idea e cerchiamo insieme la soluzione giusta."
+          },
+          {
+            "q": "Sono disponibili babysitter o fotografi?",
+            "a": "Sì, su richiesta possiamo trovare babysitter, fotografi e assistenza per esigenze particolari durante il soggiorno, anche pulizie urgenti in appartamento."
+          },
+          {
+            "q": "Come posso contattarvi durante il soggiorno?",
+            "a": "Per informazioni e assistenza puoi chiamarci o scriverci al +39 347 809 1603. Per le emergenze relative al soggiorno il nostro recapito è +39 351 391 5959."
+          }
+        ]
       }
     ]
   },
