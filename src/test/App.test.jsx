@@ -130,13 +130,13 @@ describe('App', () => {
     expect(await screen.findByRole('heading', { name: 'Frequently asked questions' })).toBeInTheDocument();
     expect(screen.getByRole('tab', { name: 'Apartments' })).toHaveAttribute('aria-selected', 'true');
     expect(screen.getByRole('heading', { name: 'Apartments', level: 2 })).toBeInTheDocument();
-    expect(screen.queryByText('What are the check-in and check-out times?')).toBeNull();
+    expect(screen.queryByText('What time are check-in and check-out?')).toBeNull();
   });
 
   it('opens an answer below its question and switches topic from the folders', async () => {
     renderApp('/faq/');
-    const question = await screen.findByRole('button', { name: 'Quale appartamento ha un terrazzino privato?' });
-    const answer = screen.getByText(/Domus Maya, in Via dei Quattro Cantoni 6/);
+    const question = await screen.findByRole('button', { name: 'Quale casa è comoda con un passeggino?' });
+    const answer = screen.getByText(/in Via degli Ibernesi 7, è al piano terra/);
     expect(answer).not.toBeVisible();
     fireEvent.click(question);
     expect(question).toHaveAttribute('aria-expanded', 'true');
@@ -144,7 +144,16 @@ describe('App', () => {
 
     fireEvent.click(screen.getByRole('tab', { name: 'Arrivo e partenza' }));
     expect(screen.getByRole('tab', { name: 'Arrivo e partenza' })).toHaveAttribute('aria-selected', 'true');
-    expect(screen.getByRole('button', { name: 'A che ora sono previsti check-in e check-out?' })).toHaveAttribute('aria-expanded', 'false');
-    expect(screen.queryByText('Quale appartamento ha un terrazzino privato?')).toBeNull();
+    expect(screen.getByRole('button', { name: 'A che ora possiamo entrare e quando dobbiamo lasciare la casa?' })).toHaveAttribute('aria-expanded', 'false');
+    expect(screen.queryByText('Quale casa è comoda con un passeggino?')).toBeNull();
+  });
+
+  it('links an apartment named in an answer to its details, and offers a contact link', async () => {
+    renderApp('/en/faq/');
+    fireEvent.click(await screen.findByRole('button', { name: /I use a wheelchair/ }));
+    expect(screen.getAllByRole('link', { name: 'Ask us on WhatsApp ↗' })[0]).toHaveAttribute('href', expect.stringContaining('wa.me'));
+    fireEvent.click(screen.getByRole('link', { name: 'Noah' }));
+    expect(await screen.findByRole('dialog')).toBeInTheDocument();
+    expect(within(screen.getByRole('dialog')).getByRole('heading', { name: /Noah/ })).toBeInTheDocument();
   });
 });

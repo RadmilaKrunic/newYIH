@@ -60,3 +60,5 @@
   .faq-panel h2{font-size:22px}
   .faq-questions button{font-size:16px;padding:15px 0}
 }
+.faq-answer a{color:#8a6a43;text-decoration:underline;text-underline-offset:3px}
+.faq-answer .faq-ask{display:inline-block;margin:-6px 0 20px;font-size:13px;letter-spacing:.3px}

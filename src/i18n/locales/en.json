@@ -219,58 +219,80 @@
         "label": "Apartments",
         "items": [
           {
-            "q": "Which homes are on the same floor near the Trevi Fountain?",
-            "a": "Noah, Chloè and Trevi Luxury are all on the 1st floor of the same building at Via del Tritone 53. They are ideal if you are travelling with several families or friends and want separate homes close together. Casa Linda (2nd floor) and Deluxe (4th floor) are in the same building, all with a lift."
+            "q": "Can three families book separate apartments in the same building near the Trevi Fountain?",
+            "a": "Yes. [Noah](home:noah), [Chloè](home:chloe) and [Trevi Luxury](home:luxury) are all on the first floor of 53 Via del Tritone. Each family can have its own apartment. Send us your dates and the number of guests in each family so we can check all three together.",
+            "contact": true
           },
           {
             "q": "Where can eight of us stay near the Spanish Steps?",
-            "a": "The Spagna Suite at Via del Babuino 72 sleeps up to 8: three bedrooms, each with a double bed, and a living room with a sofa bed. It is on the 2nd floor with a lift."
+            "a": "[Spagna Suite](home:babuino72) at 72 Via del Babuino has three double bedrooms and one bathroom. The sofa bed for the seventh and eighth guests is in one of the bedrooms. The apartment is on the second floor and has a small lift.",
+            "contact": false
           },
           {
-            "q": "Which apartment has a private terrace?",
-            "a": "Domus Maya, at Via dei Quattro Cantoni 6 in the Monti and Colosseum area, has a small private terrace. The Veneto Luxury Big Apartment has a small balcony overlooking Via Lombardia."
+            "q": "Is there a central Rome apartment with five bedrooms and several bathrooms for a group of twelve?",
+            "a": "[Veneto Luxury](home:veneto) at 14 Via Lombardia, just off Via Veneto, has five bedrooms and three bathrooms. Tell us how many separate beds you need and we’ll confirm the sleeping arrangements for your group.",
+            "contact": true
           },
           {
-            "q": "Which home suits a large group?",
-            "a": "The Veneto Luxury Big Apartment, next to Via Veneto, sleeps 12 to 15: five double bedrooms, three extra single beds, a living room with a sofa bed, a kitchen and three full bathrooms. For even larger groups we can suggest several apartments close together."
+            "q": "I use a wheelchair. Which apartment near Trevi could work for me?",
+            "a": "[Noah](home:noah) is on the first floor, served by a lift, with no steps inside the apartment. Before booking, tell us your wheelchair dimensions and bathroom access needs. We’ll check the route from the building entrance, the lift and the doorway widths with you.",
+            "contact": true
           },
           {
-            "q": "Can you add a single bed?",
-            "a": "Yes, in some homes such as Noah, Chloè and Casa Linda a single bed can be added on request. Let us know when you book and we'll have it ready before you arrive."
+            "q": "Which apartment is convenient if we’re bringing a pushchair?",
+            "a": "[Domus Gabriella](home:gabriella) at 7 Via degli Ibernesi is on the ground floor and all on one level. It sleeps up to four, with a double bedroom, a living room with a sofa bed and a small private terrace.",
+            "contact": false
           },
           {
-            "q": "Do the apartments have a lift?",
-            "a": "Yes, all our apartments are in buildings with a lift. Each listing shows which floor the home is on."
+            "q": "Which apartment near the Trevi Fountain faces an inner courtyard?",
+            "a": "[Trevi Luxury](home:luxury) at 53 Via del Tritone overlooks the building’s inner courtyard. It has a double bedroom and a living room with a sofa bed.",
+            "contact": false
           },
           {
-            "q": "Where can I see where the apartments are?",
-            "a": "Every listing has a “View on map” link. When you open “See the home and all photos” you'll also find the address and a button to show the map right in the apartment details."
+            "q": "Is there a two-bedroom, two-bathroom apartment near the Vatican with parking nearby?",
+            "a": "Our apartment at [27 Via Costantino Morin](home:vatican) in Prati has two bedrooms and two bathrooms. There is a paid garage next to the building.",
+            "contact": false
+          },
+          {
+            "q": "What should we know about getting back to the apartment at night with children?",
+            "a": "Tell us which apartment you’re considering. We can explain how to reach the entrance, where to ask your driver to drop you off and whom to contact when you arrive, so you can plan the route with your children.",
+            "contact": true
           }
         ]
       },
       {
         "id": "arrival",
-        "label": "Arrival & departure",
+        "label": "Arrival and departure",
         "items": [
           {
-            "q": "What are the check-in and check-out times?",
-            "a": "Check-in is from 15:00 and check-out is by 10:00. Let us know your arrival time so we can arrange your welcome and send you the access instructions for your apartment."
+            "q": "What time are check-in and check-out?",
+            "a": "Check-in is from 3 pm and check-out is by 10 am. If you’d like to arrive earlier, send us your arrival time and we’ll let you know whether the apartment will be ready.",
+            "contact": true
           },
           {
-            "q": "How do I get the keys?",
-            "a": "We coordinate check-in and key handover. A few days before you arrive, send us your expected arrival time and we'll send you the instructions and the meeting point."
+            "q": "Our flight lands at midnight. Can we get in at 1 am?",
+            "a": "Apartments with self check-in allow access after midnight using the instructions we send before arrival. If you prefer to meet us in person, arrange this with us in advance. In-person check-in is free until 8 pm, €30 from 8 pm to midnight and €50 after midnight.",
+            "contact": true
           },
           {
-            "q": "Can I leave my luggage before check-in or after check-out?",
-            "a": "You can use our Tourist Station Trevi at Vicolo del Gallinaccio 7, open Monday to Saturday from 09:00 to 16:00. Contact us to check availability and the cost of luggage storage."
+            "q": "How do we get the check-in instructions?",
+            "a": "Before your stay, we’ll send you a link to register your guests. Once registration is complete, you’ll receive instructions for your apartment, from the building entrance to your front door.",
+            "contact": false
           },
           {
-            "q": "Can I take a shower after check-out?",
-            "a": "Yes, on request Tourist Station Trevi offers a private shower with clean towels and toiletries. It is handy before check-in, or after check-out if your flight leaves late."
+            "q": "Where can we leave our luggage before check-in or after check-out?",
+            "a": "Tourist Station Trevi at 7 Vicolo del Gallinaccio is open Monday to Saturday, 9 am to 4 pm. Storage costs €5 per suitcase and €3 per bag. Contact us to check availability and agree a collection time.",
+            "contact": true
           },
           {
-            "q": "Can you arrange an airport transfer?",
-            "a": "Yes, we book private door-to-door transfers to and from Fiumicino, Ciampino and the cruise port, with cars, minivans or luxury vehicles with driver. Send us your flight and group size and we'll confirm price and availability."
+            "q": "We’re driving to Rome. How do we reach the apartment and where can we park?",
+            "a": "Send us your apartment name and arrival time. We’ll help you check the route against the restricted traffic zone and find a place to unload. There is a paid garage next to the apartment building at [27 Via Costantino Morin](home:vatican).",
+            "contact": true
+          },
+          {
+            "q": "What is the total price, including cleaning and city tax?",
+            "a": "Send us your dates, preferred apartment, number of adults and children’s ages. We’ll give you a breakdown of accommodation, final cleaning and any city tax due, including what is payable before arrival and what is payable locally.",
+            "contact": true
           }
         ]
       },
@@ -279,32 +301,35 @@
         "label": "Services",
         "items": [
           {
-            "q": "Can you arrange a transfer or experiences in Rome?",
-            "a": "Yes, through our partners we can book private transfers, tours and experiences. Tell us what you need: we confirm availability, prices and conditions before you book."
+            "q": "Can you arrange a transfer from the airport or cruise port?",
+            "a": "Yes. We arrange private transfers from Fiumicino, Ciampino and Civitavecchia cruise port. Send us your flight or ship details, arrival time, passenger and luggage counts and apartment address. We’ll confirm availability and price before you book.",
+            "contact": true
           },
           {
-            "q": "Do you arrange private guided tours?",
-            "a": "We put you in touch with guides and operators to visit the Colosseum, the Vatican and the historic centre, choosing the route that best suits your interests."
+            "q": "We’re two families. Can we request a minivan with child seats?",
+            "a": "Yes, we can check with the driver. Tell us the number of adults, the children’s ages and how many suitcases and pushchairs you’re bringing. We’ll confirm the vehicle and available child seats.",
+            "contact": true
           },
           {
-            "q": "Can we take day trips outside Rome?",
-            "a": "Yes, through our partners we arrange excursions to Florence, Naples, Pompeii and the Amalfi Coast, plus boat tours in Rome, Amalfi and Capri. Itineraries and availability to be agreed."
+            "q": "Can our driver pick us up from luggage storage after check-out?",
+            "a": "Yes. We can arrange pickup from Tourist Station Trevi at 7 Vicolo del Gallinaccio. We’ll agree a time with you and the driver, taking the luggage desk’s closing time into account.",
+            "contact": true
           },
           {
-            "q": "Can you help with a special occasion?",
-            "a": "Gladly: birthdays, surprise parties, proposals, anniversaries and intimate weddings. Tell us your idea and we'll find the right solution together."
+            "q": "Which apartment has Wi-Fi and air conditioning in every bedroom?",
+            "a": "[Spagna Suite](home:babuino72) at 72 Via del Babuino has Wi-Fi and air conditioning in all three double bedrooms. If you’re considering another apartment, send us its name and we’ll confirm its amenities.",
+            "contact": true
           },
           {
-            "q": "Are babysitters or photographers available?",
-            "a": "Yes, on request we can find babysitters, photographers and assistance for special needs during your stay, as well as urgent cleaning in the apartment."
-          },
-          {
-            "q": "How can I reach you during my stay?",
-            "a": "For information and assistance you can call or message us on +39 347 809 1603. For emergencies during your stay, our number is +39 351 391 5959."
+            "q": "Who can I contact if I need help during my stay?",
+            "a": "For information or assistance, call or message us on +39 347 809 1603. For urgent issues with the apartment, call +39 351 391 5959.",
+            "contact": false
           }
         ]
       }
-    ]
+    ],
+    "ask": "Ask us on WhatsApp ↗",
+    "askMessage": "Hello, I have a question from your FAQ: “{{q}}”"
   },
   "footer": {
     "tagline": "Apartments & experiences in the heart of Rome",

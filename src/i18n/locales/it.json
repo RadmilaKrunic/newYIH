@@ -219,32 +219,44 @@
         "label": "Appartamenti",
         "items": [
           {
-            "q": "Quali case sono sullo stesso piano vicino a Fontana di Trevi?",
-            "a": "Noah, Chloè e Trevi Luxury si trovano tutte al 1° piano dello stesso palazzo, in Via del Tritone 53. Sono ideali se viaggiate in più famiglie o con amici e volete alloggi separati ma vicini. Nello stesso edificio ci sono anche Casa Linda (2° piano) e Deluxe (4° piano), tutte con ascensore."
+            "q": "Siamo tre famiglie. Possiamo soggiornare nello stesso palazzo vicino a Fontana di Trevi?",
+            "a": "Sì. [Noah](home:noah), [Chloè](home:chloe) e [Trevi Luxury](home:luxury) si trovano tutti al primo piano di Via del Tritone 53. Ogni famiglia può prenotare il proprio appartamento. Indicaci le date e quante persone siete per famiglia per verificare la disponibilità insieme.",
+            "contact": true
           },
           {
-            "q": "Dove possiamo soggiornare in otto vicino a Piazza di Spagna?",
-            "a": "La Spagna Suite in Via del Babuino 72 ospita fino a 8 persone: tre camere, ciascuna con letto matrimoniale, e un salone con divano letto. È al 2° piano con ascensore."
+            "q": "Dove possiamo dormire in otto vicino a Piazza di Spagna?",
+            "a": "[Spagna Suite](home:babuino72) in Via del Babuino 72 ha tre camere matrimoniali e un bagno. Il divano letto per il settimo e l’ottavo ospite si trova in una delle camere. L’appartamento è al secondo piano con un piccolo ascensore.",
+            "contact": false
           },
           {
-            "q": "Quale appartamento ha un terrazzino privato?",
-            "a": "Domus Maya, in Via dei Quattro Cantoni 6 nella zona di Monti e del Colosseo, ha un terrazzino privato. Il Veneto Luxury Big Apartment ha invece un balconcino affacciato su Via Lombardia."
+            "q": "Siamo in dodici. Avete una casa in centro a Roma con cinque camere e più bagni?",
+            "a": "[Veneto Luxury](home:veneto), in Via Lombardia 14, accanto a Via Veneto, ha cinque camere da letto e tre bagni. Indicaci quanti letti separati vi occorrono e ti confermeremo la disposizione per il tuo gruppo.",
+            "contact": true
           },
           {
-            "q": "Quale casa è adatta a un gruppo numeroso?",
-            "a": "Il Veneto Luxury Big Apartment, a fianco di Via Veneto, accoglie da 12 a 15 ospiti: cinque camere matrimoniali, tre letti singoli aggiuntivi, un salone con divano letto, cucina e tre bagni completi. Per gruppi ancora più grandi possiamo proporti più appartamenti vicini."
+            "q": "Uso una sedia a rotelle. Quale appartamento vicino a Trevi posso valutare?",
+            "a": "[Noah](home:noah) è al primo piano con ascensore e non ha gradini interni. Prima di prenotare, comunicaci le dimensioni della carrozzina e lo spazio di cui hai bisogno in bagno. Verificheremo con te il percorso dal portone, l’ascensore e la larghezza dei passaggi.",
+            "contact": true
           },
           {
-            "q": "Si può aggiungere un letto singolo?",
-            "a": "Sì, in alcune case come Noah, Chloè e Casa Linda un letto singolo può essere predisposto su richiesta. Indicacelo quando prenoti, così lo prepariamo prima del tuo arrivo."
+            "q": "Quale casa è comoda con un passeggino?",
+            "a": "[Domus Gabriella](home:gabriella), in Via degli Ibernesi 7, è al piano terra e si sviluppa su un unico livello. Ha una camera matrimoniale, un soggiorno con divano letto e un terrazzino privato. Ospita fino a quattro persone.",
+            "contact": false
           },
           {
-            "q": "Gli appartamenti hanno l’ascensore?",
-            "a": "Sì, tutti i nostri appartamenti si trovano in palazzi con ascensore. Il piano di ogni casa è indicato nella sua scheda."
+            "q": "Vorrei stare vicino a Fontana di Trevi. Quale casa ha un affaccio interno?",
+            "a": "[Trevi Luxury](home:luxury), in Via del Tritone 53, si affaccia sul cortile interno. Ha una camera matrimoniale e un soggiorno con divano letto.",
+            "contact": false
           },
           {
-            "q": "Dove posso vedere la posizione degli appartamenti?",
-            "a": "Ogni scheda contiene il collegamento “Vedi sulla mappa”. Aprendo “Scopri la casa e tutte le foto” trovi anche l’indirizzo e il pulsante per visualizzare la mappa direttamente nei dettagli dell’appartamento."
+            "q": "C’è un appartamento vicino al Vaticano con due camere, due bagni e un garage nelle vicinanze?",
+            "a": "La casa in [Via Costantino Morin 27](home:vatican), nel quartiere Prati, ha due camere e due bagni. Accanto al palazzo c’è un garage a pagamento.",
+            "contact": false
+          },
+          {
+            "q": "È una zona sicura per rientrare la sera con i bambini?",
+            "a": "Se prevedi di rientrare tardi, indicaci la casa che stai valutando. Possiamo spiegarti come raggiungere il portone, dove farti lasciare dall’autista e chi contattare all’arrivo. Così puoi scegliere in base al percorso che farai con i bambini.",
+            "contact": true
           }
         ]
       },
@@ -253,24 +265,34 @@
         "label": "Arrivo e partenza",
         "items": [
           {
-            "q": "A che ora sono previsti check-in e check-out?",
-            "a": "Il check-in è previsto dalle 15:00 e il check-out entro le 10:00. Comunicaci il tuo orario di arrivo per organizzare l’accoglienza e ricevere le istruzioni di accesso al tuo appartamento."
+            "q": "A che ora possiamo entrare e quando dobbiamo lasciare la casa?",
+            "a": "Il check-in è dalle 15:00 e il check-out entro le 10:00. Se vuoi entrare prima, comunicaci l’orario previsto. Ti confermeremo se la casa sarà pronta.",
+            "contact": true
           },
           {
-            "q": "Come ricevo le chiavi?",
-            "a": "Coordiniamo noi il check-in e la consegna delle chiavi. Qualche giorno prima dell’arrivo scrivici l’orario previsto: ti invieremo le istruzioni e il punto d’incontro."
+            "q": "Il volo atterra a mezzanotte. Possiamo entrare anche all’una di notte?",
+            "a": "Nelle case con self check-in puoi entrare anche dopo mezzanotte seguendo le istruzioni ricevute prima dell’arrivo. Se preferisci l’accoglienza di persona, concordala con noi: è gratuita fino alle 20:00, costa 30 € dalle 20:00 a mezzanotte e 50 € dopo mezzanotte.",
+            "contact": true
           },
           {
-            "q": "Posso lasciare i bagagli prima del check-in o dopo il check-out?",
-            "a": "Puoi rivolgerti al nostro Tourist Station Trevi, in Vicolo del Gallinaccio 7, aperto dal lunedì al sabato dalle 09:00 alle 16:00. Contattaci per verificare disponibilità e costo del deposito bagagli."
+            "q": "Come riceviamo le istruzioni di accesso?",
+            "a": "Prima del soggiorno ti inviamo un link per registrare gli ospiti. Completata la registrazione, riceverai le indicazioni per il tuo appartamento, dall’ingresso del palazzo fino alla porta di casa.",
+            "contact": false
           },
           {
-            "q": "Posso fare una doccia dopo il check-out?",
-            "a": "Sì, su richiesta al Tourist Station Trevi è disponibile una doccia privata con asciugamani puliti e prodotti da bagno. È comoda prima del check-in o dopo il check-out, se il volo parte tardi."
+            "q": "Dove possiamo lasciare le valigie prima del check-in o dopo il check-out?",
+            "a": "Il deposito Tourist Station Trevi si trova in Vicolo del Gallinaccio 7. È aperto dal lunedì al sabato, dalle 9:00 alle 16:00. Il deposito costa 5 € per valigia e 3 € per borsa. Scrivici per verificare la disponibilità e concordare il ritiro.",
+            "contact": true
           },
           {
-            "q": "Potete organizzare il transfer dall’aeroporto?",
-            "a": "Sì, prenotiamo transfer privati da e per Fiumicino, Ciampino e il porto, con auto, minivan o veicoli di lusso con autista, porta a porta. Indicaci volo e numero di persone: ti confermiamo prezzo e disponibilità."
+            "q": "Arriviamo in auto. Come raggiungiamo la casa e dove parcheggiamo?",
+            "a": "Scrivici indicando appartamento e orario previsto. Ti aiuteremo a verificare il percorso rispetto alla zona a traffico limitato e dove scaricare i bagagli. Per la casa in [Via Costantino Morin 27](home:vatican) c’è un garage a pagamento accanto al palazzo.",
+            "contact": true
+          },
+          {
+            "q": "Quanto costa il soggiorno, comprese pulizie e tassa di soggiorno?",
+            "a": "Inviaci date, appartamento, numero di adulti ed età dei bambini. Ti daremo un preventivo con pernottamento, pulizia finale e tassa di soggiorno applicabile, specificando cosa pagare prima dell’arrivo e cosa sul posto.",
+            "contact": true
           }
         ]
       },
@@ -279,32 +301,35 @@
         "label": "Servizi",
         "items": [
           {
-            "q": "Potete organizzare un transfer o esperienze a Roma?",
-            "a": "Sì, tramite i nostri partner possiamo prenotare transfer privati, tour ed esperienze. Raccontaci le tue esigenze: ti confermiamo disponibilità, costi e condizioni prima della prenotazione."
+            "q": "Potete organizzare un transfer dall’aeroporto o dal porto?",
+            "a": "Sì. Organizziamo transfer privati da Fiumicino, Ciampino e dal porto di Civitavecchia. Indicaci il volo o la nave, l’orario, il numero di passeggeri, i bagagli e l’indirizzo della casa. Ti confermeremo disponibilità e prezzo prima della prenotazione.",
+            "contact": true
           },
           {
-            "q": "Organizzate tour guidati privati?",
-            "a": "Ti mettiamo in contatto con guide e operatori per visitare Colosseo, Vaticano e centro storico, scegliendo il percorso più adatto ai tuoi interessi."
+            "q": "Siamo due famiglie. Possiamo richiedere un minivan con seggiolini?",
+            "a": "Sì, possiamo verificarlo con l’autista. Indicaci il numero di adulti, l’età dei bambini, quante valigie e quanti passeggini porterete. Ti confermeremo il veicolo e i seggiolini disponibili.",
+            "contact": true
           },
           {
-            "q": "Si possono fare gite fuori Roma?",
-            "a": "Sì, tramite i nostri partner organizziamo escursioni a Firenze, Napoli, Pompei e in Costiera Amalfitana, oltre a tour in barca a Roma, Amalfi e Capri. Itinerari e disponibilità sono da concordare."
+            "q": "L’autista può venirci a prendere al deposito bagagli dopo il check-out?",
+            "a": "Sì, su richiesta possiamo organizzare la partenza dal Tourist Station Trevi in Vicolo del Gallinaccio 7. Concorderemo l’orario con te e con l’autista, tenendo conto dell’orario di chiusura del deposito.",
+            "contact": true
           },
           {
-            "q": "Potete aiutarci con un’occasione speciale?",
-            "a": "Volentieri: compleanni, feste a sorpresa, proposte romantiche, anniversari e matrimoni intimi. Raccontaci la tua idea e cerchiamo insieme la soluzione giusta."
+            "q": "Quale casa ha il Wi-Fi e l’aria condizionata in tutte le camere?",
+            "a": "[Spagna Suite](home:babuino72), in Via del Babuino 72, offre Wi-Fi e aria condizionata in tutte e tre le camere matrimoniali. Se stai valutando un’altra casa, scrivici il nome per verificarne le dotazioni.",
+            "contact": true
           },
           {
-            "q": "Sono disponibili babysitter o fotografi?",
-            "a": "Sì, su richiesta possiamo trovare babysitter, fotografi e assistenza per esigenze particolari durante il soggiorno, anche pulizie urgenti in appartamento."
-          },
-          {
-            "q": "Come posso contattarvi durante il soggiorno?",
-            "a": "Per informazioni e assistenza puoi chiamarci o scriverci al +39 347 809 1603. Per le emergenze relative al soggiorno il nostro recapito è +39 351 391 5959."
+            "q": "Chi posso contattare se ho bisogno di aiuto durante il soggiorno?",
+            "a": "Per informazioni o assistenza puoi chiamarci o scriverci al +39 347 809 1603. Per un problema urgente relativo all’appartamento puoi chiamare il +39 351 391 5959.",
+            "contact": false
           }
         ]
       }
-    ]
+    ],
+    "ask": "Scrivici per verificare ↗",
+    "askMessage": "Ciao, ho una domanda dalle FAQ: “{{q}}”"
   },
   "footer": {
     "tagline": "Appartamenti & esperienze nel cuore di Roma",

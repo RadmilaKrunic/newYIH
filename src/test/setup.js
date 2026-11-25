@@ -18,3 +18,6 @@ if (!HTMLDialogElement.prototype.showModal) {
 window.scrollTo = () => {};
 
 afterEach(cleanup);
+
+// jsdom has no layout, so scrolling is a no-op.
+Element.prototype.scrollIntoView ??= () => {};

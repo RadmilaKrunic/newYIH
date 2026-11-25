@@ -35,7 +35,9 @@ describe('seoFor', () => {
     expect(business.containsPlace).toHaveLength(12);
     expect(business.address.streetAddress).toBe('Vicolo del Gallinaccio 7');
     expect(faq['@type']).toBe('FAQPage');
-    expect(faq.mainEntity[0].name).toBe('Quali case sono sullo stesso piano vicino a Fontana di Trevi?');
+    expect(faq.mainEntity).toHaveLength(19);
+    expect(faq.mainEntity[0].acceptedAnswer.text).not.toContain('](home:');
+    expect(faq.mainEntity[0].name).toBe('Siamo tre famiglie. Possiamo soggiornare nello stesso palazzo vicino a Fontana di Trevi?');
     expect(seoFor(i18n.getFixedT('it'), 'it', '').jsonLd).toHaveLength(1);
   });
 
