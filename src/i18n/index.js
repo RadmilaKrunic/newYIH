@@ -2,6 +2,8 @@ import i18n from 'i18next';
 import { initReactI18next } from 'react-i18next';
 import it from './locales/it.json';
 import en from './locales/en.json';
+import itMoments from './locales/moments/it.json';
+import enMoments from './locales/moments/en.json';
 import { DEFAULT_LANG, langFromPath } from './paths.js';
 
 // To add a language: create locales/<code>.json with the same keys as it.json,
@@ -15,7 +17,8 @@ export const LANGUAGES = [
 const initialLang = typeof window === 'undefined' ? DEFAULT_LANG : langFromPath(window.location.pathname);
 
 i18n.use(initReactI18next).init({
-  resources: { it: { translation: it }, en: { translation: en } },
+  // The weddings & special moments page keeps its text in its own files, under the `moments` key.
+  resources: { it: { translation: { ...it, moments: itMoments } }, en: { translation: { ...en, moments: enMoments } } },
   lng: initialLang,
   fallbackLng: DEFAULT_LANG,
   supportedLngs: LANGUAGES.map((l) => l.code),

@@ -5,7 +5,8 @@ import Header from './components/Header.jsx';
 import Footer from './components/Footer.jsx';
 import Home from './pages/Home.jsx';
 import Faq from './pages/Faq.jsx';
-import { langFromPath, pageFromPath } from './i18n/paths.js';
+import Moments from './pages/Moments.jsx';
+import { langFromPath, MOMENTS_PAGE, pageFromPath } from './i18n/paths.js';
 import { applySeo, seoFor } from './seo.js';
 
 // Keeps the language, the <head> tags and the scroll position in step with the URL.
@@ -39,6 +40,8 @@ export default function App() {
           <Route path="/faq" element={<Faq />} />
           <Route path="/en" element={<Home />} />
           <Route path="/en/faq" element={<Faq />} />
+          <Route path={`/${MOMENTS_PAGE}`} element={<Moments />} />
+          <Route path={`/en/${MOMENTS_PAGE}`} element={<Moments />} />
           <Route path="*" element={<Home />} />
         </Routes>
       </main>

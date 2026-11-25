@@ -1,0 +1,216 @@
+{
+  "meta": {
+    "title": "Matrimoni intimi ed esperienze su misura a Roma | Your Italian Holidays",
+    "description": "Organizza con Bruna un matrimonio intimo, una sorpresa romantica o una festa privata a Roma. Eventi, alloggi ed esperienze su misura nel centro storico.",
+    "serviceName": "Matrimoni intimi, celebrazioni ed esperienze su misura a Roma",
+    "serviceTypes": ["Organizzazione di matrimoni intimi", "Proposte di matrimonio e sorprese romantiche", "Feste e celebrazioni private", "Soggiorni su misura a Roma"]
+  },
+  "nav": "Matrimoni & eventi",
+  "cardLink": "Matrimoni & momenti speciali →",
+  "hero": {
+    "eyebrow": "Esperienze · Your Italian Holidays",
+    "title": "I tuoi momenti speciali",
+    "titleEm": "a Roma",
+    "subtitle": "Esperienze su misura, matrimoni intimi e occasioni speciali a Roma.",
+    "cta": "Organizza la tua esperienza",
+    "whatsapp": "Scrivici su WhatsApp",
+    "imageAlt": "Una celebrazione intima a Roma"
+  },
+  "intro": {
+    "title": "Non un semplice soggiorno. Un’esperienza creata per te.",
+    "paragraphs": [
+      "Roma è una città straordinaria, ma viverla in occasione di un momento speciale può renderla davvero indimenticabile.",
+      "Che tu stia sognando un matrimonio intimo, una proposta di matrimonio, un compleanno, un anniversario o semplicemente un viaggio diverso dal solito, Your Italian Holidays ti offre la possibilità di creare un’esperienza completamente personalizzata.",
+      "Non proponiamo pacchetti standard, ma esperienze pensate intorno ai tuoi desideri, alle persone con cui viaggi e al budget che hai a disposizione.",
+      "Dall’organizzazione dell’arrivo a Roma alla scelta dell’alloggio, dai ristoranti alle location, dai trasferimenti alle sorprese più particolari: possiamo aiutarti a coordinare ogni dettaglio del tuo soggiorno."
+    ],
+    "closing": "Tu raccontaci cosa immagini. Noi ti aiutiamo a realizzarlo."
+  },
+  "bruna": {
+    "eyebrow": "Chi organizza per te",
+    "title": "Ciao, sono Bruna. E amo creare esperienze uniche.",
+    "paragraphs": [
+      "Sono la fondatrice di Your Italian Holidays.",
+      "Il mio percorso professionale nasce nel mondo del turismo, dove ho lavorato per molti anni come tour operator, occupandomi di incoming, accoglienza internazionale e organizzazione di viaggi ed esperienze personalizzate in Italia.",
+      "Nel corso degli anni ho lavorato anche nell’organizzazione di matrimoni ed eventi privati, sviluppando una particolare passione per le celebrazioni intime, eleganti e curate nei dettagli.",
+      "Ho sempre amato organizzare esperienze che non fossero uguali per tutti. Mi piace conoscere le persone, ascoltare le loro idee, capire che cosa le emoziona e trovare soluzioni originali per rendere speciale il loro soggiorno.",
+      "Oggi unisco la mia esperienza nel turismo e negli eventi alla mia attività di ospitalità a Roma. Il mio obiettivo è offrirti un unico punto di riferimento per organizzare il tuo viaggio e le occasioni speciali che desideri vivere nella Città Eterna."
+    ],
+    "quote": "Non amo i grandi eventi impersonali. Preferisco le esperienze di nicchia, dove ogni dettaglio racconta qualcosa di chi le vive.",
+    "caption": "Brunilda (Bruna)",
+    "role": "Fondatrice, Your Italian Holidays",
+    "photoAlt": "Brunilda (Bruna), fondatrice di Your Italian Holidays"
+  },
+  "sections": [
+    {
+      "id": "weddings",
+      "eyebrow": "Matrimoni intimi a Roma",
+      "title": "Piccoli matrimoni, grandi emozioni.",
+      "paragraphs": [
+        "Hai sempre desiderato sposarti a Roma? Immagina una cerimonia romantica, circondati dalle persone che ami, un ristorante caratteristico, un piccolo allestimento floreale e una giornata pensata esclusivamente per voi.",
+        "Non servono centinaia di invitati per rendere un matrimonio indimenticabile. Amo particolarmente i matrimoni intimi, con pochi ospiti, dove ogni momento può essere organizzato con attenzione e sensibilità.",
+        "Che desideriate una celebrazione soltanto per voi due, con la vostra famiglia o con un piccolo gruppo di amici, possiamo studiare insieme un’esperienza su misura."
+      ],
+      "listTitle": "Possiamo aiutarvi nella ricerca e nel coordinamento di:",
+      "list": [
+        "Location per cerimonie e ricevimenti",
+        "Ristoranti caratteristici e cene private",
+        "Decorazioni e composizioni floreali",
+        "Fotografi e professionisti del settore",
+        "Trucco e acconciatura",
+        "Trasferimenti privati",
+        "Alloggi per gli sposi e gli invitati",
+        "Esperienze e itinerari per gli ospiti"
+      ],
+      "after": [
+        "Tutto viene pensato in base alle vostre esigenze e al budget disponibile."
+      ],
+      "highlight": "Perché un matrimonio esclusivo non deve necessariamente essere costoso. Deve essere unico, personale e autentico.",
+      "imageAlt": "Un matrimonio intimo a Roma"
+    },
+    {
+      "id": "celebrations",
+      "eyebrow": "Feste private e sorprese romantiche",
+      "title": "Ogni momento speciale merita di essere ricordato.",
+      "paragraphs": [
+        "Vuoi sorprendere qualcuno durante un viaggio a Roma? Possiamo aiutarti a organizzare un compleanno, un anniversario, una proposta di matrimonio, una sorpresa romantica, una luna di miele o un’occasione familiare importante.",
+        "Immagina di arrivare nel tuo appartamento e trovare un allestimento romantico, un mazzo di fiori, una torta di compleanno o una sorpresa preparata appositamente per una persona speciale.",
+        "Oppure una cena in un luogo suggestivo, un fotografo per immortalare il momento o un’esperienza particolare nella città. Anche le idee più semplici possono diventare ricordi meravigliosi quando sono organizzate con cura."
+      ],
+      "listTitle": "",
+      "list": [],
+      "after": [],
+      "highlight": "",
+      "imageAlt": "Una sorpresa romantica a Roma"
+    },
+    {
+      "id": "tailor-made",
+      "eyebrow": "Esperienze su misura a Roma",
+      "title": "La tua Roma, esattamente come la immagini.",
+      "paragraphs": [
+        "Grazie alla nostra esperienza nell’incoming turistico, possiamo aiutarti a organizzare molto più di un semplice evento. Possiamo creare un soggiorno personalizzato, combinando:"
+      ],
+      "listTitle": "",
+      "list": [
+        "Appartamenti nel centro di Roma",
+        "Transfer privati da aeroporti e stazioni",
+        "Tour privati e visite guidate",
+        "Esperienze gastronomiche",
+        "Cooking class",
+        "Escursioni e attività esclusive",
+        "Prenotazioni di ristoranti",
+        "Sorprese e celebrazioni private",
+        "Itinerari personalizzati per coppie, famiglie e gruppi"
+      ],
+      "after": [
+        "Ogni esperienza nasce da una conversazione, perché vogliamo conoscere i tuoi interessi e il tuo modo di viaggiare."
+      ],
+      "highlight": "",
+      "imageAlt": "Un’esperienza su misura a Roma"
+    }
+  ],
+  "stay": {
+    "eyebrow": "Il tuo soggiorno, la tua esperienza",
+    "title": "Il tuo evento e il soggiorno dei tuoi ospiti, tutto in un’unica organizzazione.",
+    "paragraphs": [
+      "Uno dei vantaggi di scegliere Your Italian Holidays è poter abbinare l’organizzazione dell’esperienza al soggiorno a Roma.",
+      "Gestiamo diversi appartamenti nel centro storico, alcuni situati all’interno dello stesso edificio o a breve distanza tra loro.",
+      "Questo ci permette di aiutare anche famiglie e piccoli gruppi a trovare sistemazioni vicine, ideali per condividere un matrimonio, una ricorrenza o un viaggio speciale.",
+      "Possiamo coordinare l’arrivo degli ospiti, i transfer, il soggiorno e le attività, aiutandoti a vivere Roma con maggiore tranquillità."
+    ],
+    "zoneCount_one": "{{count}} appartamento",
+    "zoneCount_other": "{{count}} appartamenti",
+    "sameBuilding": "nello stesso edificio",
+    "link": "Scopri gli appartamenti ↗"
+  },
+  "budget": {
+    "title": "Un’esperienza esclusiva, anche con un budget contenuto",
+    "paragraphs": [
+      "Credo che un’esperienza indimenticabile non dipenda necessariamente da quanto si spende. Spesso è la scelta giusta di un luogo, un piccolo dettaglio o una sorpresa inaspettata a fare la differenza.",
+      "Per questo preferisco creare proposte personalizzate, ascoltando prima i desideri e le possibilità economiche di ogni ospite.",
+      "Raccontami cosa vorresti organizzare e quale budget hai a disposizione. Insieme possiamo trovare soluzioni adatte a te."
+    ]
+  },
+  "faq": {
+    "eyebrow": "Domande frequenti",
+    "title": "Le vostre domande, le risposte di Bruna",
+    "items": [
+      {
+        "q": "Bruna, vorremmo sposarci a Roma con la nostra famiglia. Siamo 15 persone. Puoi aiutarci?",
+        "a": "Certamente! È proprio il tipo di matrimonio che amo organizzare. Possiamo cercare una location romantica, un ristorante caratteristico, un fotografo e coordinare anche il soggiorno della vostra famiglia nei nostri appartamenti. Raccontatemi il periodo, la vostra idea e il budget disponibile."
+      },
+      {
+        "q": "Vorremmo organizzare un matrimonio a Roma, ma non abbiamo un budget molto alto. È possibile?",
+        "a": "Assolutamente sì. Non è necessario spendere cifre importanti per vivere un momento speciale. Possiamo individuare alternative semplici, eleganti e personalizzate, scegliendo con attenzione i servizi e i fornitori in base alle vostre priorità."
+      },
+      {
+        "q": "Siamo stranieri e non conosciamo Roma. Possiamo affidarci a te per tutta l’organizzazione?",
+        "a": "Certamente. Ho lavorato per anni nel mondo dell’incoming turistico e conosco le esigenze di chi arriva in Italia dall’estero. Posso aiutarvi a coordinare gli alloggi, i trasferimenti, le esperienze e i servizi necessari per il vostro evento."
+      },
+      {
+        "q": "Possiamo organizzare il matrimonio e prenotare anche gli appartamenti per i nostri invitati?",
+        "a": "Sì. Your Italian Holidays dispone di diversi appartamenti nel centro di Roma. Possiamo verificare le disponibilità e proporre soluzioni per far soggiornare familiari e amici vicini tra loro."
+      },
+      {
+        "q": "Vorrei organizzare una proposta di matrimonio romantica a Roma. Puoi aiutarmi?",
+        "a": "Con piacere! Possiamo studiare insieme una sorpresa personalizzata, scegliendo un luogo suggestivo, un fotografo, i fiori, una cena romantica o altri dettagli speciali."
+      },
+      {
+        "q": "Vorrei sorprendere la mia compagna per il suo compleanno durante il nostro soggiorno. È possibile?",
+        "a": "Certamente! Possiamo organizzare una sorpresa nell’appartamento, una torta, fiori, decorazioni o una cena speciale. Raccontami cosa le piace e cercheremo insieme l’idea più adatta."
+      },
+      {
+        "q": "Organizzate soltanto matrimoni?",
+        "a": "No. Possiamo aiutarti a organizzare compleanni, anniversari, sorprese romantiche, proposte di matrimonio, piccoli eventi familiari e soggiorni personalizzati a Roma."
+      },
+      {
+        "q": "Possiamo organizzare un’esperienza anche se non soggiorniamo nei vostri appartamenti?",
+        "a": "Sì. Puoi contattarci anche se hai già prenotato un altro alloggio. Valuteremo insieme il tipo di esperienza che desideri organizzare e i servizi disponibili."
+      },
+      {
+        "q": "Quanto costa il servizio di organizzazione?",
+        "a": "Ogni esperienza è diversa. Il costo dipende dal numero di partecipanti, dal periodo e dai servizi richiesti. Possiamo preparare una proposta personalizzata dopo aver conosciuto le tue esigenze e il budget indicativo."
+      }
+    ]
+  },
+  "enquiry": {
+    "eyebrow": "Creiamo il tuo momento speciale a Roma",
+    "title": "Ogni esperienza inizia da una storia. Raccontami la tua.",
+    "paragraphs": [
+      "Hai un’occasione speciale da celebrare a Roma? Un matrimonio intimo, una sorpresa romantica, un compleanno o semplicemente il desiderio di vivere qualcosa di diverso?",
+      "Sarò felice di ascoltare la tua idea e aiutarti a creare un’esperienza personale e indimenticabile."
+    ],
+    "signature": "Bruna",
+    "signatureRole": "Fondatrice, Your Italian Holidays",
+    "type": "Occasione",
+    "types": {
+      "wedding": "Matrimonio intimo",
+      "proposal": "Proposta di matrimonio",
+      "birthday": "Compleanno",
+      "anniversary": "Anniversario",
+      "honeymoon": "Luna di miele",
+      "family": "Festa in famiglia",
+      "stay": "Soggiorno su misura a Roma",
+      "other": "Altro"
+    },
+    "date": "Data o periodo",
+    "datePlaceholder": "es. 12 giugno 2027, oppure primavera 2027",
+    "guests": "Numero di ospiti",
+    "nights": "Pernottamenti",
+    "noStay": "Nessun alloggio",
+    "nightsOption_one": "{{count}} notte",
+    "nightsOption_other": "{{count}} notti",
+    "nightsMore": "Più di 14 notti",
+    "budget": "Budget indicativo",
+    "budgetPlaceholder": "es. 3.000 €",
+    "name": "Il tuo nome",
+    "namePlaceholder": "Nome",
+    "idea": "La tua idea",
+    "ideaPlaceholder": "Raccontami cosa immagini",
+    "submit": "Organizza la tua esperienza",
+    "hint": "Si apre WhatsApp con la richiesta pronta da inviare. Nulla viene prenotato finché non concordiamo una proposta.",
+    "unspecified": "da definire",
+    "message": "Ciao Bruna, sono {{name}}. Vorrei organizzare: {{type}}.\nData o periodo: {{date}}\nOspiti: {{guests}}\nPernottamenti: {{nights}}\nBudget indicativo: {{budget}}\n{{idea}}"
+  },
+  "note": "Cerimonie, ricevimenti e feste si svolgono in spazi idonei e nel rispetto delle regole applicabili. Gli appartamenti sono proposti per il soggiorno degli ospiti e per piccoli allestimenti concordati in anticipo."
+}

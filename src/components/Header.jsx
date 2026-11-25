@@ -2,7 +2,7 @@ import { useTranslation } from 'react-i18next';
 import { Link } from 'react-router-dom';
 import LanguageSwitcher from './LanguageSwitcher.jsx';
 import { siteImage } from '../data/photos.js';
-import { localePath } from '../i18n/paths.js';
+import { localePath, MOMENTS_PAGE } from '../i18n/paths.js';
 
 export default function Header() {
   const { t, i18n } = useTranslation();
@@ -15,6 +15,7 @@ export default function Header() {
       <nav>
         <Link to={`${home}#appartamenti`}>{t('nav.apartments')}</Link>
         <Link to={`${home}#esperienze`}>{t('nav.services')}</Link>
+        <Link to={localePath(i18n.resolvedLanguage, MOMENTS_PAGE)}>{t('moments.nav')}</Link>
         <Link to={`${home}#bruna`}>{t('nav.about')}</Link>
         <Link to={localePath(i18n.resolvedLanguage, 'faq')}>{t('nav.faq')}</Link>
         <LanguageSwitcher />
