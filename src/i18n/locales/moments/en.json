@@ -1,0 +1,216 @@
+{
+  "meta": {
+    "title": "Intimate Weddings & Tailor-Made Experiences in Rome | Your Italian Holidays",
+    "description": "Plan an intimate wedding, romantic surprise or personalised celebration in Rome with Bruna. Local event planning, accommodation and tailor-made experiences.",
+    "serviceName": "Intimate weddings, celebrations and tailor-made experiences in Rome",
+    "serviceTypes": ["Intimate wedding planning", "Marriage proposals and romantic surprises", "Private celebrations", "Tailor-made Rome stays"]
+  },
+  "nav": "Weddings & events",
+  "cardLink": "Weddings & special moments →",
+  "hero": {
+    "eyebrow": "Experiences · Your Italian Holidays",
+    "title": "Your Special Moments",
+    "titleEm": "in Rome",
+    "subtitle": "Tailor-made experiences, intimate weddings and special occasions in Rome.",
+    "cta": "Plan your experience",
+    "whatsapp": "Write on WhatsApp",
+    "imageAlt": "An intimate celebration in Rome"
+  },
+  "intro": {
+    "title": "More than a stay. An experience made just for you.",
+    "paragraphs": [
+      "Rome is an extraordinary city, but experiencing it on a special occasion can make it truly unforgettable.",
+      "Whether you dream of an intimate wedding, a marriage proposal, a birthday, an anniversary or simply a trip that is a little different, Your Italian Holidays can help create an entirely personalised experience.",
+      "We do not offer one-size-fits-all packages. We create experiences around your wishes, the people you are travelling with and the budget you have in mind.",
+      "From organising your arrival in Rome and choosing the right accommodation to restaurants, venues, transfers and thoughtful surprises, we can help coordinate every detail of your stay."
+    ],
+    "closing": "Tell us what you imagine. We will help you bring it to life."
+  },
+  "bruna": {
+    "eyebrow": "Meet your planner",
+    "title": "Hello, I’m Bruna. And I love creating unique experiences.",
+    "paragraphs": [
+      "I am the founder of Your Italian Holidays.",
+      "My professional journey began in tourism. I spent many years working in tour operating and incoming tourism, welcoming international visitors and organising personalised trips and experiences in Italy.",
+      "Over the years, I have also worked in wedding and private event planning, developing a particular passion for intimate, elegant celebrations where every detail matters.",
+      "I have always loved creating experiences that are different for every guest. I enjoy getting to know people, listening to their ideas, understanding what moves them and finding original ways to make their stay special.",
+      "Today I combine my background in tourism and events with my hospitality business in Rome. My goal is to be your single point of contact for planning your trip and the special occasions you want to experience in the Eternal City."
+    ],
+    "quote": "I am not drawn to large, impersonal events. I prefer intimate, niche experiences, where every detail tells something about the people enjoying them.",
+    "caption": "Brunilda (Bruna)",
+    "role": "Founder, Your Italian Holidays",
+    "photoAlt": "Brunilda (Bruna), founder of Your Italian Holidays"
+  },
+  "sections": [
+    {
+      "id": "weddings",
+      "eyebrow": "Intimate weddings in Rome",
+      "title": "Small weddings, big emotions.",
+      "paragraphs": [
+        "Have you always dreamed of getting married in Rome? Imagine a romantic ceremony surrounded by the people you love, a charming restaurant, simple floral arrangements and a day designed entirely around you.",
+        "You do not need hundreds of guests to make a wedding unforgettable. I especially love intimate weddings with a small number of guests, where every moment can be planned with care and sensitivity.",
+        "Whether you are planning a celebration for just the two of you, your family or a small group of friends, we can design an experience around your wishes."
+      ],
+      "listTitle": "We can help you research and coordinate:",
+      "list": [
+        "Ceremony and reception venues",
+        "Charming restaurants and private dining",
+        "Decorations and floral arrangements",
+        "Photographers and other professionals",
+        "Hair and makeup",
+        "Private transfers",
+        "Accommodation for the couple and their guests",
+        "Experiences and itineraries for guests"
+      ],
+      "after": [
+        "Everything is planned around your needs and your available budget."
+      ],
+      "highlight": "Because an exclusive wedding does not necessarily have to be expensive. It should be unique, personal and authentic.",
+      "imageAlt": "An intimate wedding in Rome"
+    },
+    {
+      "id": "celebrations",
+      "eyebrow": "Private celebrations & romantic surprises",
+      "title": "Every special moment deserves to be remembered.",
+      "paragraphs": [
+        "Would you like to surprise someone during a trip to Rome? We can help you organise a birthday, anniversary, marriage proposal, romantic surprise, honeymoon or important family occasion.",
+        "Imagine arriving at your apartment to find a romantic setting, a bouquet of flowers, a birthday cake or a surprise arranged especially for someone you love.",
+        "Or perhaps dinner somewhere magical, a photographer to capture the moment or an unusual experience in the city. Even the simplest ideas can become beautiful memories when arranged with care."
+      ],
+      "listTitle": "",
+      "list": [],
+      "after": [],
+      "highlight": "",
+      "imageAlt": "A romantic surprise in Rome"
+    },
+    {
+      "id": "tailor-made",
+      "eyebrow": "Tailor-made Rome experiences",
+      "title": "Your Rome, exactly as you imagine it.",
+      "paragraphs": [
+        "Thanks to our background in incoming tourism, we can help you arrange much more than a single event. We can create a personalised stay combining:"
+      ],
+      "listTitle": "",
+      "list": [
+        "Holiday apartments in central Rome",
+        "Private airport and station transfers",
+        "Private tours and guided visits",
+        "Food and wine experiences",
+        "Cooking classes",
+        "Excursions and exclusive activities",
+        "Restaurant reservations",
+        "Surprises and private celebrations",
+        "Personalised itineraries for couples, families and groups"
+      ],
+      "after": [
+        "Every experience begins with a conversation, because we want to understand your interests and the way you like to travel."
+      ],
+      "highlight": "",
+      "imageAlt": "A tailor-made experience in Rome"
+    }
+  ],
+  "stay": {
+    "eyebrow": "Your stay, your experience",
+    "title": "Your event and your guests’ accommodation, all coordinated together.",
+    "paragraphs": [
+      "One of the benefits of choosing Your Italian Holidays is the opportunity to combine your special occasion with your stay in Rome.",
+      "We manage several apartments in the historic centre, some in the same building or within walking distance of one another.",
+      "This helps us suggest nearby accommodation for families and small groups who want to share a wedding, celebration or special trip.",
+      "We can coordinate guest arrivals, transfers, accommodation and activities, so you can enjoy Rome with greater peace of mind."
+    ],
+    "zoneCount_one": "{{count}} apartment",
+    "zoneCount_other": "{{count}} apartments",
+    "sameBuilding": "in the same building",
+    "link": "See the apartments ↗"
+  },
+  "budget": {
+    "title": "An exclusive experience, even on a modest budget",
+    "paragraphs": [
+      "I believe an unforgettable experience does not necessarily depend on how much you spend. Often, the right location, a small detail or an unexpected surprise is what makes the difference.",
+      "That is why I prefer to create individual proposals, listening first to each guest’s wishes and budget.",
+      "Tell me what you would like to organise and what budget you have in mind. Together, we can explore options that suit you."
+    ]
+  },
+  "faq": {
+    "eyebrow": "Frequently asked questions",
+    "title": "Your questions, answered by Bruna",
+    "items": [
+      {
+        "q": "Bruna, we would like to get married in Rome with our family. There will be 15 of us. Can you help?",
+        "a": "Of course! This is exactly the kind of wedding I love to plan. We can look for a romantic venue, a charming restaurant and a photographer, and also coordinate your family’s accommodation in our apartments. Tell me your dates, your ideas and your budget."
+      },
+      {
+        "q": "We would love a wedding in Rome, but our budget is limited. Is it possible?",
+        "a": "Absolutely. You do not need to spend a fortune to enjoy a special day. We can explore simple, elegant and personalised options, carefully choosing services and suppliers according to your priorities."
+      },
+      {
+        "q": "We are visiting from abroad and do not know Rome. Can we rely on you to coordinate everything?",
+        "a": "Certainly. I have spent years working in incoming tourism and understand the needs of international visitors. I can help coordinate accommodation, transfers, experiences and the services you need for your event."
+      },
+      {
+        "q": "Can we organise the wedding and book apartments for our guests as well?",
+        "a": "Yes. Your Italian Holidays offers several apartments in central Rome. We can check availability and suggest options that allow family and friends to stay close to one another."
+      },
+      {
+        "q": "I would like to plan a romantic marriage proposal in Rome. Can you help?",
+        "a": "I would love to! We can plan a personal surprise together, choosing a beautiful setting, photographer, flowers, a romantic dinner or other thoughtful details."
+      },
+      {
+        "q": "I want to surprise my partner for her birthday during our stay. Is that possible?",
+        "a": "Of course! We can arrange a surprise in the apartment, a cake, flowers, decorations or a special dinner. Tell me what she loves, and we will explore an idea that suits her."
+      },
+      {
+        "q": "Do you only organise weddings?",
+        "a": "No. We can help with birthdays, anniversaries, romantic surprises, marriage proposals, intimate family celebrations and personalised stays in Rome."
+      },
+      {
+        "q": "Can we book an experience even if we are not staying in your apartments?",
+        "a": "Yes. You are welcome to contact us even if you have already booked elsewhere. We can discuss the kind of experience you have in mind and the services available."
+      },
+      {
+        "q": "How much does event planning cost?",
+        "a": "Every experience is different. The cost depends on the number of guests, the dates and the services requested. We can prepare a personalised proposal once we understand your needs and approximate budget."
+      }
+    ]
+  },
+  "enquiry": {
+    "eyebrow": "Let’s create your special moment in Rome",
+    "title": "Every experience starts with a story. Tell me yours.",
+    "paragraphs": [
+      "Do you have a special occasion to celebrate in Rome? An intimate wedding, a romantic surprise, a birthday or simply the wish to experience something different?",
+      "I would love to hear your idea and help you create a personal, unforgettable experience."
+    ],
+    "signature": "Bruna",
+    "signatureRole": "Founder, Your Italian Holidays",
+    "type": "Occasion",
+    "types": {
+      "wedding": "Intimate wedding",
+      "proposal": "Marriage proposal",
+      "birthday": "Birthday",
+      "anniversary": "Anniversary",
+      "honeymoon": "Honeymoon",
+      "family": "Family celebration",
+      "stay": "Tailor-made stay in Rome",
+      "other": "Something else"
+    },
+    "date": "Date or period",
+    "datePlaceholder": "e.g. 12 June 2027, or spring 2027",
+    "guests": "Number of guests",
+    "nights": "Overnight stays",
+    "noStay": "No accommodation needed",
+    "nightsOption_one": "{{count}} night",
+    "nightsOption_other": "{{count}} nights",
+    "nightsMore": "More than 14 nights",
+    "budget": "Approximate budget",
+    "budgetPlaceholder": "e.g. €3,000",
+    "name": "Your name",
+    "namePlaceholder": "First name",
+    "idea": "Your idea",
+    "ideaPlaceholder": "Tell me what you imagine",
+    "submit": "Plan your experience",
+    "hint": "WhatsApp opens with your request ready to send. Nothing is booked until we agree on a proposal.",
+    "unspecified": "to be defined",
+    "message": "Hi Bruna, I'm {{name}}. I'd like to plan: {{type}}.\nDate or period: {{date}}\nGuests: {{guests}}\nOvernight stays: {{nights}}\nApproximate budget: {{budget}}\n{{idea}}"
+  },
+  "note": "Ceremonies, receptions and parties take place in suitable venues and in line with the applicable rules. Our apartments are offered for guests' stays and for small arrangements agreed in advance."
+}

@@ -5,7 +5,7 @@ import { apartments } from './data/apartments.js';
 import { contact } from './data/contact.js';
 import { photosFor, siteImage } from './data/photos.js';
 import { LANGUAGES } from './i18n/index.js';
-import { DEFAULT_LANG, localePath } from './i18n/paths.js';
+import { DEFAULT_LANG, localePath, MOMENTS_PAGE } from './i18n/paths.js';
 
 export const SITE_URL = (import.meta.env?.VITE_SITE_URL || 'https://www.youritalianholidays.com').replace(/\/+$/, '');
 
@@ -24,7 +24,7 @@ function structuredData(t, lang, page, url) {
     email: contact.email,
     telephone: contact.phone.replace(/\s+/g, ''),
     foundingDate: '2012',
-    founder: { '@type': 'Person', name: 'Brunilda' },
+    founder: { '@id': `${SITE_URL}/#founder`, '@type': 'Person', name: 'Brunilda', alternateName: 'Bruna' },
     address: {
       '@type': 'PostalAddress',
       streetAddress: 'Vicolo del Gallinaccio 7',
@@ -49,6 +49,7 @@ function structuredData(t, lang, page, url) {
       address: { '@type': 'PostalAddress', streetAddress: a.address, addressLocality: 'Roma', addressCountry: 'IT' },
     })),
   };
+  if (page === MOMENTS_PAGE) return [business, ...momentsData(t, url)];
   if (page !== 'faq') return [business];
   return [
     business,
@@ -65,11 +66,56 @@ function structuredData(t, lang, page, url) {
   ];
 }
 
+// The weddings & special moments page: the service it offers and its visible FAQ.
+function momentsData(t, url) {
+  return [
+    {
+      '@context': 'https://schema.org',
+      '@type': 'Service',
+      name: t('moments.meta.serviceName'),
+      description: t('moments.meta.description'),
+      url,
+      serviceType: t('moments.meta.serviceTypes', { returnObjects: true }),
+      areaServed: { '@type': 'City', name: 'Roma' },
+      provider: [
+        { '@id': `${SITE_URL}/#business` },
+        {
+          '@id': `${SITE_URL}/#founder`,
+          '@type': 'Person',
+          name: 'Brunilda',
+          alternateName: 'Bruna',
+          jobTitle: t('moments.bruna.role'),
+          image: absolute(siteImage('bruna-doppiopetto.png')),
+        },
+      ],
+    },
+    {
+      '@context': 'https://schema.org',
+      '@type': 'FAQPage',
+      url,
+      mainEntity: t('moments.faq.items', { returnObjects: true }).map(({ q, a }) => ({
+        '@type': 'Question',
+        name: q,
+        acceptedAnswer: { '@type': 'Answer', text: a },
+      })),
+    },
+  ];
+}
+
+// Pages aimed mainly at international visitors default to English for unmatched languages.
+const X_DEFAULT_LANG = { [MOMENTS_PAGE]: 'en' };
+
+const TITLES = {
+  faq: ['meta.faqTitle', 'meta.faqDescription'],
+  [MOMENTS_PAGE]: ['moments.meta.title', 'moments.meta.description'],
+};
+
 /** All head data for one page in one language. `t` must be fixed to that language. */
 export function seoFor(t, lang, page = '') {
   const url = absolute(localePath(lang, page));
-  const title = page === 'faq' ? t('meta.faqTitle') : t('meta.title');
-  const description = page === 'faq' ? t('meta.faqDescription') : t('meta.description');
+  const [titleKey, descriptionKey] = TITLES[page] ?? ['meta.title', 'meta.description'];
+  const title = t(titleKey);
+  const description = t(descriptionKey);
   return {
     lang,
     title,
@@ -77,7 +123,7 @@ export function seoFor(t, lang, page = '') {
     url,
     alternates: [
       ...LANGUAGES.map((l) => ({ hreflang: l.code, href: absolute(localePath(l.code, page)) })),
-      { hreflang: 'x-default', href: absolute(localePath(DEFAULT_LANG, page)) },
+      { hreflang: 'x-default', href: absolute(localePath(X_DEFAULT_LANG[page] ?? DEFAULT_LANG, page)) },
     ],
     image: absolute(siteImage('bruna-doppiopetto.png')),
     ogLocale: t('meta.ogLocale'),

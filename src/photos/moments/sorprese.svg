@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 300" role="img" aria-label="Feste private e sorprese romantiche">
+<title>Feste private e sorprese romantiche</title>
+<rect width="400" height="300" fill="#efe4d4"/>
+<circle cx="318" cy="78" r="34" fill="#dfcdb6"/>
+<rect y="232" width="400" height="68" fill="#e3d2bb"/>
+<g fill="none" stroke="#796044" stroke-width="3" stroke-linecap="round" stroke-linejoin="round">
+<rect x="80" y="182" width="120" height="50" fill="#f6efe5"/>
+<rect x="96" y="142" width="88" height="40" fill="#dfcdb6"/>
+<path d="M80 200c15 8 30-8 45 0s30-8 45 0 22-6 30 0" stroke-width="2"/>
+<path d="M120 142v-20M140 142v-24M160 142v-20" stroke-width="2.5"/>
+<path d="M120 114c-4-6 0-10 0-12 3 3 5 7 0 12zM140 110c-4-6 0-10 0-12 3 3 5 7 0 12zM160 114c-4-6 0-10 0-12 3 3 5 7 0 12z" fill="#b97d56" stroke-width="1.5"/>
+<rect x="242" y="172" width="70" height="60" fill="#dfcdb6"/>
+<path d="M277 172v60M242 196h70" stroke="#b97d56"/>
+<path d="M277 172c-14-22-34-10-18 0M277 172c14-22 34-10 18 0" stroke="#b97d56" stroke-width="2.5"/>
+<path d="M300 120c-6-10-22-4-14 8l14 14 14-14c8-12-8-18-14-8z" fill="#b97d56" stroke-width="2"/>
+<path d="M60 70l6 6M66 70l-6 6M210 60v10M205 65h10" stroke-width="2"/>
+</g>
+</svg>

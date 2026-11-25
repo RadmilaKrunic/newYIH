@@ -42,3 +42,19 @@ export function siteImage(file, files = localFiles, base = remoteBase) {
 export function localSiteImage(file, files = localFiles) {
   return files[`../photos/site/${file}`];
 }
+
+const PHOTO_EXTENSIONS = ['jpg', 'jpeg', 'png', 'webp', 'JPG', 'JPEG', 'PNG', 'WEBP'];
+
+/**
+ * An image for the weddings & special moments page from src/photos/moments/:
+ * a photo (<name>.jpg/.png/.webp) wins over the drawn placeholder (<name>.svg),
+ * then `fallback` (a site image name) is used. See src/photos/moments/README.md.
+ */
+export function momentsImage(name, fallback, files = localFiles) {
+  for (const ext of PHOTO_EXTENSIONS) {
+    const photo = files[`../photos/moments/${name}.${ext}`];
+    if (photo) return { src: photo, isPhoto: true };
+  }
+  const drawn = files[`../photos/moments/${name}.svg`] ?? (fallback && localSiteImage(fallback, files));
+  return drawn ? { src: drawn, isPhoto: false } : undefined;
+}

@@ -1,4 +1,6 @@
 import { useTranslation } from 'react-i18next';
+import { Link } from 'react-router-dom';
+import { localePath, MOMENTS_PAGE } from '../i18n/paths.js';
 import { localSiteImage, siteImage } from '../data/photos.js';
 import { whatsappUrl } from '../data/contact.js';
 import { useSiteConfig } from '../siteConfig.js';
@@ -17,6 +19,7 @@ const SERVICE_IMAGES = [
 ];
 
 const LUGGAGE = 2;
+const EVENTS = SERVICE_IMAGES.indexOf('servizio-eventi');
 
 // The luggage card always keeps its photo; the other cards' images follow the
 // showServiceIllustrations switch in site-config.json.
@@ -28,7 +31,7 @@ const serviceImage = (i, showOthers) => {
 };
 
 export default function Services() {
-  const { t } = useTranslation();
+  const { t, i18n } = useTranslation();
   const { showServiceIllustrations } = useSiteConfig();
   const items = t('services.items', { returnObjects: true });
   return (
@@ -51,6 +54,11 @@ export default function Services() {
               <img className="luggage-photo" src={serviceImage(i, showServiceIllustrations)} alt={i === LUGGAGE ? t('services.photoAlt') : s.title} loading="lazy" />
             )}
             <p>{s.text}</p>
+            {i === EVENTS && (
+              <Link className="service-link" to={localePath(i18n.resolvedLanguage, MOMENTS_PAGE)}>
+                {t('moments.cardLink')}
+              </Link>
+            )}
           </article>
         ))}
       </div>
