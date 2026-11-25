@@ -1,6 +1,9 @@
 import { useId, useState } from 'react';
 import { useTranslation } from 'react-i18next';
+import { Link } from 'react-router-dom';
 import { whatsappUrl } from '../data/contact.js';
+import { answerParts, homeAnchor } from '../data/faq.js';
+import { localePath } from '../i18n/paths.js';
 
 // Desktop-style folder icon: the selected topic shows an open folder with papers inside.
 function FolderIcon({ open }) {
@@ -26,6 +29,7 @@ export default function Faq() {
   const [topicId, setTopicId] = useState(topics[0].id);
   const [openQ, setOpenQ] = useState(null);
   const uid = useId();
+  const lang = i18n.resolvedLanguage;
   const topic = topics.find((x) => x.id === topicId) ?? topics[0];
 
   const selectTopic = (id) => {
@@ -34,7 +38,7 @@ export default function Faq() {
   };
 
   return (
-    <div className="faq-main" lang={i18n.resolvedLanguage}>
+    <div className="faq-main" lang={lang}>
       <div className="faq-eyebrow">{t('faq.eyebrow')}</div>
       <h1>{t('faq.title')}</h1>
 
@@ -72,7 +76,20 @@ export default function Faq() {
                   <span className="faq-toggle" aria-hidden="true" />
                 </button>
                 <div id={answerId} className="faq-answer" hidden={!open}>
-                  <p>{item.a}</p>
+                  <p>
+                    {answerParts(item.a).map((part, n) =>
+                      typeof part === 'string' ? (
+                        part
+                      ) : (
+                        <Link key={n} to={`${localePath(lang)}#${homeAnchor(part.homeId)}`}>{part.text}</Link>
+                      ),
+                    )}
+                  </p>
+                  {item.contact && (
+                    <a className="faq-ask" href={whatsappUrl(t('faq.askMessage', { q: item.q }))} target="_blank" rel="noopener noreferrer">
+                      {t('faq.ask')}
+                    </a>
+                  )}
                 </div>
               </li>
             );

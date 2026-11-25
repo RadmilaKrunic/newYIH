@@ -1,9 +1,11 @@
 import { useState } from 'react';
+import { useLocation } from 'react-router-dom';
 import { useTranslation } from 'react-i18next';
 import { apartments, mapUrl, ZONES } from '../data/apartments.js';
 import { photosFor } from '../data/photos.js';
 import { whatsappUrl } from '../data/contact.js';
 import Gallery from './Gallery.jsx';
+import { homeAnchor } from '../data/faq.js';
 
 const homes = apartments.map((a) => ({ ...a, photos: photosFor(a) }));
 
@@ -11,6 +13,19 @@ export default function Apartments() {
   const { t } = useTranslation();
   const [zone, setZone] = useState('all');
   const [openId, setOpenId] = useState(null);
+  const { hash } = useLocation();
+
+  const [seenHash, setSeenHash] = useState(null);
+
+  // `/#casa-<id>` (linked from the FAQ) opens that apartment's details, once per navigation.
+  if (hash !== seenHash) {
+    setSeenHash(hash);
+    const home = homes.find((h) => `#${homeAnchor(h.id)}` === hash);
+    if (home) {
+      setZone('all');
+      setOpenId(home.id);
+    }
+  }
 
   const visible = zone === 'all' ? homes : homes.filter((h) => h.zone === zone);
   const opened = homes.find((h) => h.id === openId);
@@ -33,7 +48,7 @@ export default function Apartments() {
       </div>
       <div className="grid" id="properties">
         {visible.map((h) => (
-          <article key={h.id} className="card">
+          <article key={h.id} id={homeAnchor(h.id)} className="card">
             {h.photos[0] && (
               <button type="button" className="photo-button" onClick={() => setOpenId(h.id)} aria-label={t('apartments.openPhotos', { name: h.name })}>
                 <img loading="lazy" src={h.photos[0].src} alt={t('apartments.coverAlt', { name: h.name })} />

@@ -6,6 +6,7 @@ import { contact } from './data/contact.js';
 import { photosFor, siteImage } from './data/photos.js';
 import { LANGUAGES } from './i18n/index.js';
 import { DEFAULT_LANG, localePath } from './i18n/paths.js';
+import { answerText } from './data/faq.js';
 
 export const SITE_URL = (import.meta.env?.VITE_SITE_URL || 'https://www.youritalianholidays.com').replace(/\/+$/, '');
 
@@ -59,7 +60,7 @@ function structuredData(t, lang, page, url) {
       mainEntity: t('faq.topics', { returnObjects: true }).flatMap((topic) => topic.items).map(({ q, a }) => ({
         '@type': 'Question',
         name: q,
-        acceptedAnswer: { '@type': 'Answer', text: a },
+        acceptedAnswer: { '@type': 'Answer', text: answerText(a) },
       })),
     },
   ];
